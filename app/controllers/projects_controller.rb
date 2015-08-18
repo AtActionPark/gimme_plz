@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  before_action :correct_user, only: [:edit, :update]
+  before_action :correct_user, only: [:new, :create, :edit, :update]
 
   def create
     @project = current_user.projects.build(project_params)

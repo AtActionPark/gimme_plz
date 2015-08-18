@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+
+  before_action :authenticate_user!, :only => :newProject
   def home
     @projects = Project.take(3)
   end
@@ -30,4 +32,5 @@ class StaticPagesController < ApplicationController
   def newProject
     @project = current_user.projects.build 
   end
+
 end
