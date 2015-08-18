@@ -3,3 +3,13 @@
 test:
   name: Test User
   email: example@mail.com
+
+admin:
+  name: admin
+  email: admin@example.com
+  admin: true
+
+user:
+  name: user
+  email: user@example.com
+  admin: false
