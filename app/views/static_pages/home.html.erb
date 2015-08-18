@@ -9,8 +9,16 @@
 
 <div class="container selection">
   <h2>Notre sélection :</h1>
+  <ul class="row">
+  <% for @project in @projects %>
+    <a href="/projects/<%= @project.id %>">
+      <%= render 'projects/projectResume' %>
+    </a>
+  <% end %>
+  </ul>
 </div>
 
 <div class="container partners">
   <h2>Nos partenaires</h1>
 </div>
+

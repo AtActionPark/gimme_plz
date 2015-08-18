@@ -1,0 +1,30 @@
+
+<li class="col-sm-4">
+  <div class="projectResume">
+
+    <div class="projectResumeImage">
+      <%= picture_for_project @project, size: 100 %>
+      <div class="projectResumeTitle">
+        <span><%= @project.title %></span>
+      </div>
+    </div>
+
+    <div class="projectResumeText">
+      <div class="projectResumePresentation">
+        <%= markdown(@project.presentation) %>
+      </div>
+    </div>
+
+    <div class="projectResumeInfo">
+      <div class="objective">
+        <p class="sub"><%= 0 %>$</p>
+        <p>sur <%= @project.objective %>$</p>
+      </div>
+       <div class="remaining">
+        <p class="sub"><%= 0 %></p>
+        <p >Jours restant </p>
+      </div>
+    </div>
+
+  </div>
+</li>

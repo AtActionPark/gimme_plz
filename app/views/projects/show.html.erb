@@ -1,3 +1,4 @@
+<% provide(:title, @project.title) %>
 <div class="projectShow">
 
   <div class="projectTitle">
@@ -11,17 +12,17 @@
 
     <div class="aside">
       <div class="asideElement">
-        <p class="sub"><%= @project.objective %>$</p>
-        <p >sur <%= @project.objective %>$</p>
+        <p class="sub"><%= 0 %>$</p>
+        <p>sur <%= @project.objective %>$</p>
       </div>
 
       <div class="asideElement">
-        <p class="sub"><%= @project.objective %></p>
+        <p class="sub"><%= 0 %></p>
         <p >Contributeurs</p>
       </div>
 
       <div class="asideElement">
-        <p class="sub"><%= @project.objective %></p>
+        <p class="sub"><%= 0 %></p>
         <p >Jours restant </p>
       </div>
 
@@ -42,5 +43,5 @@
 </div>
 
 <% if current_user == @project.user %>
-  <p><%= link_to "Edit projet", edit_project_path %></p>
+  <p><%= link_to "Editer le projet", edit_project_path %></p>
 <% end %>

@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+    @projects = Project.take(3)
   end
 
   def create

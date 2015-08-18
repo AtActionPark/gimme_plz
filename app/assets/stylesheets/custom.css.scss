@@ -4,6 +4,8 @@
 /* mixins, variables, etc. */
 $lightBlue: #d6ebf2;
 $transparentDarkBlue: rgba(70,164,181,0.5);
+$light-grey:#E5E5E5;
+$less-light-grey:#d3d3d3;
 
 body {
   padding-top: 60px;
@@ -129,7 +131,64 @@ body {
 .selection{
   background-color: $lightBlue;
   width           :100%;
-  height          :400px;
+
+  li{
+    display:inline-block;
+    margin-bottom:10px;
+  }
+
+  .projectResume{
+    background-color: $light-grey;
+    border-radius: 10px;
+    border: 1px solid $less-light-grey;
+
+    position:relative;
+    width:100%;
+    overflow:none;
+
+    .projectResumeImage{
+      margin-top:10px;
+      margin-left:10px;
+    }
+
+    .projectResumeTitle{
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      margin-left:10px;
+
+      img{
+        display: inline-block;
+      }
+    }
+
+    .projectResumeText{
+      margin-top:10px;
+      margin-left:10px;
+      padding-bottom:70px;
+    }
+
+    .projectResumeInfo{
+
+      position:absolute;
+      bottom:0;
+      width:100%;
+      padding-top:5px;
+      border-top:1px solid black;
+
+      .objective, .remaining{
+        display: inline-block;
+        margin-left:10px;
+      }
+
+      .sub{
+        font-weight: bold;
+        margin-bottom:0;
+      }
+    }
+  }
+
+  
 }
 
 .partners{
@@ -179,16 +238,16 @@ body {
   }
 
   .presentation{
+    $size : 300px;
     position:relative;
 
     .projectPicture{
       display:inline-block;
       width: 50%;
-      min-height:200px;
+      min-height:$size;
 
       img{
         max-width: 100%;
-        max-height: 400px;
       }
     }
 
@@ -197,15 +256,16 @@ body {
       position:absolute;
       top:20px;
       width: 49%;
-      min-height:200px;
+      min-height:$size;
       
       .sub{
         font-weight: bold;
+        font-size: 40px;
         margin:0 0;
         padding:0 0;
       }
       .asideElement{
-        margin-left:20px;
+        margin-left:40px;
       }
 
     }
