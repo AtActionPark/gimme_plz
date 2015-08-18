@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+
   devise_for :users, :controllers => { registrations: 'registrations' }
   resources :users, only: [:index, :show, :destroy]
+  resources :projects
 
   root 'static_pages#home' 
 
@@ -12,5 +14,6 @@ Rails.application.routes.draw do
   get 'assistance' => 'static_pages#assistance'
   get 'contact' => 'static_pages#contact'
   get 'signup'  => 'users#new'
+  get 'newProject'  => 'static_pages#newProject'
  
 end

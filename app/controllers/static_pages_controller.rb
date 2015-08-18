@@ -2,6 +2,9 @@ class StaticPagesController < ApplicationController
   def home
   end
 
+  def create
+  end
+
   def help
   end
 
@@ -21,5 +24,9 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
+  end
+
+  def newProject
+    @project = current_user.projects.build 
   end
 end

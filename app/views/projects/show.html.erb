@@ -1,0 +1,46 @@
+<div class="projectShow">
+
+  <div class="projectTitle">
+    <h1><%= @project.title %></h1>
+  </div>
+
+  <div class="presentation">
+    <div class="projectPicture">
+      <%= picture_for_project @project, size: 1000 %>
+    </div>
+
+    <div class="aside">
+      <div class="asideElement">
+        <p class="sub"><%= @project.objective %>$</p>
+        <p >sur <%= @project.objective %>$</p>
+      </div>
+
+      <div class="asideElement">
+        <p class="sub"><%= @project.objective %></p>
+        <p >Contributeurs</p>
+      </div>
+
+      <div class="asideElement">
+        <p class="sub"><%= @project.objective %></p>
+        <p >Jours restant </p>
+      </div>
+
+      <button class="asideElement">Contribuer</button>
+    </div>
+  </div>
+
+  <div class="projectPresentation">
+   <p class="subTitle">Presentation</p>
+   <div><%= @project.presentation %></div>
+  </div>
+
+  <div class="projectDescription">
+    <p class="subTitle">Description</p>
+    <div><%= markdown(@project.description) %> </div>
+  </div>
+  
+</div>
+
+<% if current_user == @project.user %>
+  <p><%= link_to "Edit projet", edit_project_path %></p>
+<% end %>

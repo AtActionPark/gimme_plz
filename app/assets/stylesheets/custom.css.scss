@@ -15,6 +15,7 @@ body {
   }
 }
 
+
 /* HEADER */
 .navbar{
   background-color   : white;
@@ -165,4 +166,68 @@ body {
     text-align      : left;
  }
 
+ /*PROJECT PAGE*/
+ .projectShow{
+
+  .projectTitle{
+    text-align: center;
+  }
+  .subTitle{
+    display: inline-block;
+    font-weight: bold;
+    margin-top:20px;
+  }
+
+  .presentation{
+    position:relative;
+
+    .projectPicture{
+      display:inline-block;
+      width: 50%;
+      min-height:200px;
+
+      img{
+        max-width: 100%;
+        max-height: 400px;
+      }
+    }
+
+    .aside{
+      display:inline-block;
+      position:absolute;
+      top:20px;
+      width: 49%;
+      min-height:200px;
+      
+      .sub{
+        font-weight: bold;
+        margin:0 0;
+        padding:0 0;
+      }
+      .asideElement{
+        margin-left:20px;
+      }
+
+    }
+  }
+  
+
+  .projectPresentation{
+
+  }
+  
+  .projectObDescription{
+    
+  }
+
+  
+ }
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
 
