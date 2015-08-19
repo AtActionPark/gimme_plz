@@ -1,6 +1,7 @@
 class StaticPagesController < ApplicationController
 
   before_action :authenticate_user!, :only => :newProject
+  
   def home
     @projects = Project.last(3)
   end

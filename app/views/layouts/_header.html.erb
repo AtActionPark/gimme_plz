@@ -20,6 +20,7 @@
               </li>
             </ul>
           </li>
+          <li class="round-image-50"><%= image_tag(current_user.avatar.url(:thumb)) %></li>
         <% else %>
           <li><%= link_to "Se connecter", new_user_session_path%></li>
         <% end %>

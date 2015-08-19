@@ -1,6 +1,5 @@
 class Project < ActiveRecord::Base
   belongs_to :user
-  mount_uploader :picture, PictureUploader
 
   #validates :user_id, presence: true
   #validates :title, presence: true
@@ -13,7 +12,7 @@ class Project < ActiveRecord::Base
   end
 
   validate do |project|
-    project.errors.add(:base, "Choisir une image")  if project.picture.blank?
+    project.errors.add(:base, "Choisir une image")  if project.mainpicture.blank?
   end
 
   validate do |project|
@@ -27,6 +26,9 @@ class Project < ActiveRecord::Base
   validate do |project|
     project.errors.add(:base, "Entrer une description")  if project.description.blank?
   end
+
+  has_attached_file :mainpicture, :styles => { :medium => "300x300>", :thumb => "100x100#" }
+  validates_attachment_content_type :mainpicture, :content_type => /\Aimage\/.*\Z/
 
   
 end

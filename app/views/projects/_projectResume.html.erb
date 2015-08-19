@@ -3,7 +3,7 @@
   <div class="projectResume">
 
     <div class="projectResumeImage">
-      <%= picture_for_project @project, size: 100 %>
+      <%= image_tag @project.mainpicture.url(:thumb) %>
       <div class="projectResumeTitle">
         <span><%= @project.title %></span>
       </div>

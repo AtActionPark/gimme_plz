@@ -39,7 +39,7 @@ class ProjectsController < ApplicationController
 
   private
     def project_params
-      params.require(:project).permit(:title, :picture, :presentation, :objective, :description)
+      params.require(:project).permit(:title, :mainpicture, :presentation, :objective, :description)
     end
 
     def correct_user

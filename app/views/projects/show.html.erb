@@ -7,7 +7,7 @@
 
   <div class="presentation">
     <div class="projectPicture">
-      <%= picture_for_project @project, size: 1000 %>
+      <%= image_tag @project.mainpicture.url(:medium) %>
     </div>
 
     <div class="aside">

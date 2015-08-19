@@ -33,6 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'carrierwave'
+gem 'paperclip'
 gem 'mini_magick'
 gem 'fog'
 gem 'redcarpet'
