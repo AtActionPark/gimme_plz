@@ -33,11 +33,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'carrierwave'
+gem 'aws-sdk', '~> 1.36.1'
 gem 'paperclip'
 gem 'mini_magick'
-gem 'fog'
 gem 'redcarpet'
 gem 'coderay'
+
+gem 'fog', '~> 1.24'
+gem 'figaro'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
