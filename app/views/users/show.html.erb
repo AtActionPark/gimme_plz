@@ -12,7 +12,7 @@
   <div class="col-md-8">
     <% if @user.projects.any? %>
       <h3>projects (<%= @user.projects.count %>)</h3>
-      <ol class="projects">
+      <ol class="userProjects">
         <%= render @projects %>
       </ol>
     <% end %>

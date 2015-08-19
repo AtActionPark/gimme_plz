@@ -166,6 +166,7 @@ body {
       margin-top:10px;
       margin-left:10px;
       padding-bottom:70px;
+      font-size: 13px !important;
     }
 
     .projectResumeInfo{
@@ -234,7 +235,9 @@ body {
   .subTitle{
     display: inline-block;
     font-weight: bold;
+    font-size: 30px;
     margin-top:20px;
+    text-decoration: underline;
   }
 
   .presentation{
@@ -270,17 +273,6 @@ body {
 
     }
   }
-  
-
-  .projectPresentation{
-
-  }
-  
-  .projectObDescription{
-    
-  }
-
-  
  }
 
 #error_explanation {
@@ -304,4 +296,75 @@ body {
     text-align: center;
     img { width: 100% }
 }
+
+.projectsThumb{
+  list-style-type: none;
+
+  a{
+    color:#000;
+    &:link{
+      text-decoration:none;
+    }
+    &:hover{
+      text-decoration:none;
+    }
+    &:visited{
+      text-decoration:none;
+    }
+    &:active{
+      text-decoration:none;
+    }
+  }
+  .projectThumb{
+    padding: 10px 10px;
+    margin-bottom:10px;
+    background-color: $light-grey;
+    border: 1px solid $less-light-grey;
+    border-radius: 10px;
+
+    .title{
+      font-weight: bold;
+      font-size: 20px;
+      margin-left:10px;
+    }
+
+    .presentation{
+
+    }
+  }
+}
+
+.userProjects{
+
+  a{
+    color:#000;
+    &:link{
+      text-decoration:none;
+    }
+    &:hover{
+      text-decoration:none;
+    }
+    &:visited{
+      text-decoration:none;
+    }
+    &:active{
+      text-decoration:none;
+    }
+  }
+  .projectThumb{
+    margin-bottom:10px;
+
+    .title{
+      font-weight: bold;
+      font-size: 20px;
+      margin-left:10px;
+    }
+
+    .presentation{
+      display:none;
+    }
+  }
+}
+
+
 

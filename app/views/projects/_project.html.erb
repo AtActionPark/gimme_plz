@@ -1,5 +1,7 @@
-<li id="project-<%= project.id %>">
-  <%= image_tag project.mainpicture.url(:thumb)  %>
-  <span class="title"><%= link_to project.title, project %></span>
-  <br><br>
-</li>
+<a href="/projects/<%= project.id %>">
+  <li class="projectThumb">
+    <%= image_tag project.mainpicture.url(:thumb)  %>
+    <span class="title"><%=  project.title %></span>
+    <p class="presentation"><%= project.presentation %><p>
+  </li>
+</a>
