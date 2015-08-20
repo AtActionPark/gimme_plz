@@ -288,6 +288,24 @@ body {
       .asideElement{
         margin-left:40px;
       }
+      form{
+        margin-top:20px;
+        margin-left:40px;
+
+        .field{
+          display: inline-block;
+          
+          input{
+            width:100px;
+          }
+        }
+      }
+      .connect{
+        margin-top:10px;
+        form{
+          margin-left:0;
+        }
+      }
 
     }
   }

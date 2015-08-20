@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150819094222) do
+ActiveRecord::Schema.define(version: 20150820124115) do
+
+  create_table "donations", force: :cascade do |t|
+    t.integer  "amount"
+    t.boolean  "accepted"
+    t.integer  "user_id"
+    t.integer  "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "donations", ["project_id"], name: "index_donations_on_project_id"
+  add_index "donations", ["user_id"], name: "index_donations_on_user_id"
 
   create_table "projects", force: :cascade do |t|
     t.string   "title"
@@ -26,6 +38,7 @@ ActiveRecord::Schema.define(version: 20150819094222) do
     t.string   "mainpicture_content_type"
     t.integer  "mainpicture_file_size"
     t.datetime "mainpicture_updated_at"
+    t.integer  "amount"
   end
 
 # Could not dump table "users" because of following NoMethodError

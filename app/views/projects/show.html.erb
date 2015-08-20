@@ -12,21 +12,34 @@
 
     <div class="aside">
       <div class="asideElement">
-        <p class="sub"><%= 0 %>$</p>
-        <p>sur <%= @project.objective %>$</p>
+        <p class="sub amount"><%= @project.amount %>€</p>
+        <p>sur <%= @project.objective %>€</p>
       </div>
 
       <div class="asideElement">
-        <p class="sub"><%= 0 %></p>
+        <p class="sub contributors"><%= 0 %></p>
         <p >Contributeurs</p>
       </div>
 
       <div class="asideElement">
-        <p class="sub"><%= 0 %></p>
+        <p class="sub remainingDays"><%= 0 %></p>
         <p >Jours restant </p>
       </div>
 
-      <button class="asideElement btn btn-primary">Contribuer</button>
+      <% if current_user %>
+        <%= form_for(@project.donations.build, remote: true) do |f| %>
+          <%= f.hidden_field :project_id %>
+          <div class="field">
+            <%= f.number_field :amount, placeholder: "Montant" %>
+          </div>
+          <%= f.submit "Contribuer", class: "btn btn-primary" %>
+        <% end %>
+      <% else %>
+        <div class="asideElement">
+        <div class="connect"><%= button_to("Se connecter", new_user_session_path, class: "btn btn-primary",:method => :get) %> </div>
+        </div>
+      <% end %>
+
     </div>
   </div>
 
@@ -48,7 +61,6 @@
 <% end %>
 
 <br><br>
-
 
 
 <div id="disqus_thread"></div>

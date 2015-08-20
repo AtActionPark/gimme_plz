@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { registrations: 'registrations' }
   resources :users, only: [:index, :show, :destroy]
   resources :projects
+  resources :donations, only: [:create]
 
   root 'static_pages#home' 
 
