@@ -38,7 +38,6 @@ gem 'paperclip'
 gem 'mini_magick'
 gem 'redcarpet'
 gem 'coderay'
-
 gem 'fog', '~> 1.24'
 gem 'figaro'
 

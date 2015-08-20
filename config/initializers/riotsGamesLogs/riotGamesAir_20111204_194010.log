@@ -1,0 +1,3 @@
+debug time 19:40:10.63 :: Before HeartBeat Count=1 Time=Sun Dec 4 2011 19:40:10 GMT+0100 AccountId=28699575 Session=aaf40f66-2608-4464-8db7-f0c1b3b9d65c
+STOP LOGGING: More than 0 nested objects or properties. 
+debug time 19:40:10.830 :: After HeartBeat Count=1 Result=5

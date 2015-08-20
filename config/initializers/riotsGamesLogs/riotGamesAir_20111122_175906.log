@@ -1,0 +1,17 @@
+debug time 17:59:06.352 :: Before HeartBeat Count=1 Time=Tue Nov 22 2011 17:59:06 GMT+0100 AccountId=28699575 Session=8254b715-3c86-4027-950a-1b1df0af20e9
+STOP LOGGING: More than 0 nested objects or properties. 
+debug time 17:59:07.138 :: After HeartBeat Count=1 Result=5
+debug time 18:02:06.360 :: Before HeartBeat Count=2 Time=Tue Nov 22 2011 18:02:06 GMT+0100 AccountId=28699575 Session=8254b715-3c86-4027-950a-1b1df0af20e9
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 1
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 1
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug time 18:02:06.581 :: After HeartBeat Count=2 Result=5

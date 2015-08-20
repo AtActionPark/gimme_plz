@@ -1,0 +1,214 @@
+debug time 21:57:25.785 :: Before HeartBeat Count=1 Time=Thu Feb 2 2012 21:57:25 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+STOP LOGGING: More than 0 nested objects or properties. 
+debug time 21:57:26.586 :: After HeartBeat Count=1 Result=5
+debug time 21:59:25.800 :: Before HeartBeat Count=2 Time=Thu Feb 2 2012 21:59:25 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 1
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 1
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 21:59:26.02 :: After HeartBeat Count=2 Result=5
+debug time 22:01:26.597 :: Before HeartBeat Count=3 Time=Thu Feb 2 2012 22:01:26 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 2
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 2
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:01:27.589 :: After HeartBeat Count=3 Result=5
+debug time 22:03:26.614 :: Before HeartBeat Count=4 Time=Thu Feb 2 2012 22:03:26 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 3
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 3
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:03:27.589 :: After HeartBeat Count=4 Result=5
+debug time 22:05:27.593 :: Before HeartBeat Count=5 Time=Thu Feb 2 2012 22:05:27 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 4
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 4
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:05:28.589 :: After HeartBeat Count=5 Result=5
+debug time 22:07:27.595 :: Before HeartBeat Count=6 Time=Thu Feb 2 2012 22:07:27 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 5
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 5
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:07:28.589 :: After HeartBeat Count=6 Result=5
+debug time 22:09:28.592 :: Before HeartBeat Count=7 Time=Thu Feb 2 2012 22:09:28 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 6
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 6
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:09:29.588 :: After HeartBeat Count=7 Result=5
+debug time 22:11:28.596 :: Before HeartBeat Count=8 Time=Thu Feb 2 2012 22:11:28 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 7
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 7
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:11:29.588 :: After HeartBeat Count=8 Result=5
+debug time 22:13:29.592 :: Before HeartBeat Count=9 Time=Thu Feb 2 2012 22:13:29 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 8
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 8
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:13:30.588 :: After HeartBeat Count=9 Result=5
+debug time 22:15:30.592 :: Before HeartBeat Count=10 Time=Thu Feb 2 2012 22:15:30 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 9
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 9
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:15:31.589 :: After HeartBeat Count=10 Result=5
+debug time 22:17:30.618 :: Before HeartBeat Count=11 Time=Thu Feb 2 2012 22:17:30 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 10
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 10
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:17:31.594 :: After HeartBeat Count=11 Result=5
+debug time 22:19:31.592 :: Before HeartBeat Count=12 Time=Thu Feb 2 2012 22:19:31 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 11
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 11
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:19:32.589 :: After HeartBeat Count=12 Result=5
+debug time 22:21:31.592 :: Before HeartBeat Count=13 Time=Thu Feb 2 2012 22:21:31 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 12
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 12
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:21:32.589 :: After HeartBeat Count=13 Result=5
+debug time 22:23:31.592 :: Before HeartBeat Count=14 Time=Thu Feb 2 2012 22:23:31 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 13
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 13
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:23:32.589 :: After HeartBeat Count=14 Result=5
+debug time 22:25:31.591 :: Before HeartBeat Count=15 Time=Thu Feb 2 2012 22:25:31 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 14
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 14
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:25:32.589 :: After HeartBeat Count=15 Result=5
+debug time 22:27:31.591 :: Before HeartBeat Count=16 Time=Thu Feb 2 2012 22:27:31 GMT+0100 AccountId=29131007 Session=14df9a20-b93b-4f49-abd9-3ebd6ccc6f20
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 15
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 15
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 120000
+debug time 22:27:32.588 :: After HeartBeat Count=16 Result=5
+debug time 22:27:44.792 :: Performing heartbeat at Thu Feb 2 2012 22:27:44 GMT+0100

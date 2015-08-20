@@ -1,0 +1,135 @@
+debug time 19:56:04.722 :: Before HeartBeat Count=1 Time=Thu Oct 13 2011 19:56:04 GMT+0200 AccountId=28699575 Session=e8aade63-848f-4189-878f-f5c14bc4dba4
+STOP LOGGING: More than 0 nested objects or properties. 
+debug time 19:56:05.330 :: After HeartBeat Count=1 Result=5
+debug time 19:56:09.773 :: Performing heartbeat at Thu Oct 13 2011 19:56:09 GMT+0200
+debug time 19:59:04.759 :: Before HeartBeat Count=2 Time=Thu Oct 13 2011 19:59:04 GMT+0200 AccountId=28699575 Session=e8aade63-848f-4189-878f-f5c14bc4dba4
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 1
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 1
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug time 19:59:04.960 :: After HeartBeat Count=2 Result=5
+debug time 20:02:05.195 :: Before HeartBeat Count=3 Time=Thu Oct 13 2011 20:02:05 GMT+0200 AccountId=28699575 Session=e8aade63-848f-4189-878f-f5c14bc4dba4
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 2
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 2
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug time 20:03:00.508 :: Fail on HeartBeat: [FaultEvent fault=[RPC Fault faultString="Send failed" faultCode="Client.Error.MessageSend" faultDetail="Channel.Connect.Failed error Failed on url: 'rtmps://prod.eu.lol.riotgames.com:2099'"] messageId="5A260D5C-CBF7-676E-3A97-FE73961C6FC1" type="fault" bubbles=false cancelable=true eventPhase=2]
+debug +++ [int] eventPhase = 2
+debug +++ [Boolean] bubbles = false
+debug +++ [Boolean] cancelable = false
+debug +++ [String] type = channelFault
+debug ++++ [Boolean] useSmallMessages = true
+debug ++++ [int] connectTimeout = -1
+debug ++++ [Boolean] authenticated = true
+debug ++++ [Boolean] reconnecting = false
+debug ++++ [Boolean] mpiEnabled = false
+debug ++++ [String] protocol = rtmps
+debug +++++ [String] proxyType = best
+debug time 20:05:06.140 :: Before HeartBeat Count=4 Time=Thu Oct 13 2011 20:05:06 GMT+0200 AccountId=28699575 Session=e8aade63-848f-4189-878f-f5c14bc4dba4
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 3
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 3
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug time 20:05:06.332 :: After HeartBeat Count=4 Result=5
+debug time 20:08:06.140 :: Before HeartBeat Count=5 Time=Thu Oct 13 2011 20:08:06 GMT+0200 AccountId=28699575 Session=e8aade63-848f-4189-878f-f5c14bc4dba4
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 4
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 4
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug time 20:08:06.333 :: After HeartBeat Count=5 Result=5
+debug time 20:11:07.138 :: Before HeartBeat Count=6 Time=Thu Oct 13 2011 20:11:07 GMT+0200 AccountId=28699575 Session=e8aade63-848f-4189-878f-f5c14bc4dba4
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 5
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 5
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug time 20:11:07.330 :: After HeartBeat Count=6 Result=5
+debug time 20:14:07.188 :: Before HeartBeat Count=7 Time=Thu Oct 13 2011 20:14:07 GMT+0200 AccountId=28699575 Session=e8aade63-848f-4189-878f-f5c14bc4dba4
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 6
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 6
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug time 20:14:11.96 :: Fail on HeartBeat: [FaultEvent fault=[RPC Fault faultString="status" faultCode="Client.Error.DeliveryInDoubt" faultDetail="undefined url:'rtmps://prod.eu.lol.riotgames.com:2099'"] messageId="FA0B6CAF-0579-B0E8-D431-FE7DD1989222" type="fault" bubbles=false cancelable=true eventPhase=2]
+debug +++ [int] eventPhase = 2
+debug +++ [Boolean] bubbles = false
+debug +++ [Boolean] cancelable = false
+debug +++ [String] type = channelFault
+debug ++++ [Boolean] useSmallMessages = true
+debug ++++ [int] connectTimeout = -1
+debug ++++ [Boolean] authenticated = true
+debug ++++ [Boolean] reconnecting = false
+debug ++++ [Boolean] mpiEnabled = false
+debug ++++ [String] protocol = rtmps
+debug +++++ [String] proxyType = best
+debug time 20:17:07.212 :: Before HeartBeat Count=8 Time=Thu Oct 13 2011 20:17:07 GMT+0200 AccountId=28699575 Session=e8aade63-848f-4189-878f-f5c14bc4dba4
+debug ++ [int] eventPhase = 2
+debug ++ [Boolean] bubbles = false
+debug ++ [Boolean] cancelable = false
+debug ++ [String] type = timer
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 7
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug +++ [int] repeatCount = 0
+debug +++ [int] currentCount = 7
+debug +++ [Boolean] running = true
+debug +++ [int] delay = 180000
+debug time 20:17:11.692 :: Fail on HeartBeat: [FaultEvent fault=[RPC Fault faultString="Send failed" faultCode="Client.Error.MessageSend" faultDetail="Channel.Connect.Failed error undefined url:'rtmps://prod.eu.lol.riotgames.com:2099'"] messageId="3ADC4F94-D68C-BEA3-4A1C-FE80930CF6B5" type="fault" bubbles=false cancelable=true eventPhase=2]
+debug +++ [int] eventPhase = 2
+debug +++ [Boolean] bubbles = false
+debug +++ [Boolean] cancelable = false
+debug +++ [String] type = channelFault
+debug ++++ [Boolean] useSmallMessages = true
+debug ++++ [int] connectTimeout = -1
+debug ++++ [Boolean] authenticated = true
+debug ++++ [Boolean] reconnecting = false
+debug ++++ [Boolean] mpiEnabled = false
+debug ++++ [String] protocol = rtmps
+debug +++++ [String] proxyType = best
