@@ -77,7 +77,4 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false.
 
-  
-Paperclip::Attachment.default_options[:url] = ':s3_domain_url'
-Paperclip::Attachment.default_options[:path] = '/:class/:attachment/:id_partition/:style/:filename'
 end
