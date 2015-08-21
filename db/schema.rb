@@ -27,22 +27,45 @@ ActiveRecord::Schema.define(version: 20150821104334) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "title"
-    t.string   "picture"
     t.text     "presentation"
     t.integer  "objective"
     t.text     "description"
     t.integer  "user_id"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
     t.string   "mainpicture_file_name"
     t.string   "mainpicture_content_type"
     t.integer  "mainpicture_file_size"
     t.datetime "mainpicture_updated_at"
-    t.integer  "amount"
+    t.integer  "amount",                   default: 0
     t.integer  "timelimit"
   end
 
-# Could not dump table "users" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
+  add_index "projects", ["user_id", "created_at"], name: "index_projects_on_user_id_and_created_at"
+  add_index "projects", ["user_id"], name: "index_projects_on_user_id"
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
+    t.string   "email",                  default: "",    null: false
+    t.string   "encrypted_password",     default: "",    null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,     null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.boolean  "admin",                  default: false
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+  end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end
