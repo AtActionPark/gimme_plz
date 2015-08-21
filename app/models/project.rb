@@ -25,6 +25,10 @@ class Project < ActiveRecord::Base
   end
 
   validate do |project|
+    project.errors.add(:base, "Entrer une limite de temps")  if project.timelimit.blank?
+  end
+
+  validate do |project|
     project.errors.add(:base, "Entrer une description")  if project.description.blank?
   end
 
