@@ -167,6 +167,15 @@ body {
       margin-left:10px;
       padding-bottom:70px;
       font-size: 13px !important;
+
+      .projectResumePresentation{
+        max-height: 132px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+      }
     }
 
     .projectResumeInfo{
