@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150820124115) do
+ActiveRecord::Schema.define(version: 20150821104334) do
 
   create_table "donations", force: :cascade do |t|
     t.integer  "amount"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20150820124115) do
     t.integer  "mainpicture_file_size"
     t.datetime "mainpicture_updated_at"
     t.integer  "amount"
+    t.integer  "timelimit"
   end
 
 # Could not dump table "users" because of following NoMethodError

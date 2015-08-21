@@ -8,6 +8,7 @@ class DonationsController < ApplicationController
       p = Project.find(donations_params[:project_id])
       @amount = p.amount.to_i + donations_params[:amount].to_i
       p.update_attribute(:amount, @amount)
+      @contributors = p.contributors
       respond_to do |format|
         format.html { redirect_to root_path }
         format.js 

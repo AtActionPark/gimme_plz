@@ -15,7 +15,11 @@
   <br>
 
   <%= f.label :'Objectif - €' %><br>
-  <%= f.text_field :objective %><br>
+  <%= f.number_field :objective %><br>
+  <br>
+
+  <%= f.label :'Limite en jours' %><br>
+  <%= f.number_field :timelimit %><br>
   <br>
 
   <%= f.label :'Description - Markdown' %><br>

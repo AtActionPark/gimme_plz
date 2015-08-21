@@ -32,5 +32,13 @@ class Project < ActiveRecord::Base
 
   validates_attachment_content_type :mainpicture, :content_type => /\Aimage\/.*\Z/
 
+  def contributors
+    Donation.where("project_id = ?", self.id).select('DISTINCT user_id').count()
+  end
+
+  def remainingTime
+    p = Project.find(self.id)
+    (p.timelimit - (Time.now - p.created_at)/1.day).floor
+  end
   
 end

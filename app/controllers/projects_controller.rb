@@ -14,7 +14,7 @@ class ProjectsController < ApplicationController
   def update
     @project = Project.find(params[:id])
     if @project.update_attributes(project_params)
-      flash[:success] = "Project updated"
+      flash[:success] = "Project mis à jour"
       redirect_to @project
     else
       render 'edit'
@@ -34,12 +34,14 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
+    @contributors = @project.contributors
+    @remainingtime = @project.remainingTime
   end
 
 
   private
     def project_params
-      params.require(:project).permit(:title, :mainpicture, :presentation, :objective, :description)
+      params.require(:project).permit(:title, :mainpicture, :presentation, :objective, :timelimit, :description)
     end
 
     def correct_user

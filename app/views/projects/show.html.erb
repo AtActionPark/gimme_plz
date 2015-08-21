@@ -17,13 +17,13 @@
       </div>
 
       <div class="asideElement">
-        <p class="sub contributors"><%= 0 %></p>
+        <p class="sub contributors"><%= @contributors %></p>
         <p >Contributeurs</p>
       </div>
 
       <div class="asideElement">
-        <p class="sub remainingDays"><%= 0 %></p>
-        <p >Jours restant </p>
+        <p class="sub remainingDays"><%= @remainingtime %></p>
+        <p >Jours restant sur <%= @project.timelimit %> </p>
       </div>
 
       <% if current_user %>
