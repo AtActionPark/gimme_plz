@@ -8,7 +8,7 @@ $size:129px;
   width: 515px;
   margin: 0 auto;
 }
-#infinite-scrolling{
+#infinite-scrolling, .pagination{
   display:block;
 }
 #projects{
@@ -33,6 +33,7 @@ $size:129px;
   }
 
   .projectResumeImage{
+
     margin-top:10px;
     text-align  :center;
   }
