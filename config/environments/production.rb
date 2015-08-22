@@ -81,7 +81,7 @@ Rails.application.configure do
   Paperclip::Attachment.default_options[:url] = ':s3_domain_url'
   Paperclip::Attachment.default_options[:path] = '/:class/:attachment/:id_partition/:style/:filename'
 
-  config.action_mailer.default_url_options = { :host => 'https://shielded-taiga-9226.herokuapp.com/' }
+  
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
@@ -97,4 +97,5 @@ Rails.application.configure do
   user_name: ENV["GMAIL_USERNAME"],
   password: ENV["GMAIL_PASSWORD"]
   }
+  config.action_mailer.default_url_options = { :host => 'https://shielded-taiga-9226.herokuapp.com/' }
 end
