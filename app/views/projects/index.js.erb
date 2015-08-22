@@ -1,0 +1,7 @@
+$('#projects').append('<%= j render @projects %>');
+<% if @projects.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate @projects,  inner_window: 1, outter_window: 1 %>');
+<% else %>
+  $(window).off('scroll');
+  $('.pagination').remove();
+<% end %>

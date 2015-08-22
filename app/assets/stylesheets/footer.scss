@@ -1,0 +1,45 @@
+/* mixins, variables, etc. */
+$lightBlue: #d6ebf2;
+
+
+.footer{
+  margin-top      :20px;
+  padding         :20px 0;
+  background-color: $lightBlue;
+
+  .wrapper{
+    text-align    : center;
+  }
+
+  .footerDiv{
+    display       : inline-block;
+  }
+
+
+  h2 span {
+  background      : $lightBlue;
+  padding         : 0 5px;
+  margin-bottom   : 0;
+  Text-align      : Center; 
+  }
+
+  h2+* {
+    border-top    : solid 2px grey;
+    padding-top   : 25px;
+    margin-top    : -25px;
+    margin-left   :20px;
+    margin-right  :20px;
+    margin-bottom :0;
+    padding-bottom:0;
+  }
+
+  p {
+    padding-top   : 5px;
+  }
+
+  ul{
+    list-style    : none;
+    text-align    : left;
+  }
+
+}

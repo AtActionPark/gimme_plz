@@ -1,6 +1,13 @@
 <% provide(:title, "Projets") %>
 <h1>All projects</h1>
 
-<ul class="projectsThumb">
+
+<div id="projects" >
   <%= render @projects %>
-</ul>
+</div>
+
+<div id="infinite-scrolling" class="center ">
+  <%= will_paginate inner_window: 2, outter_window: 1 %>
+</div>
+
+

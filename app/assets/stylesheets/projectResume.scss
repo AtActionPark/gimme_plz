@@ -1,0 +1,68 @@
+/* mixins, variables, etc. */
+$lightBlue: #d6ebf2;
+$light-grey:#E5E5E5;
+$less-light-grey:#d3d3d3;
+
+.projectResume{
+
+  li{
+    display:inline-block;
+    margin-bottom:10px;
+  }
+  
+  background-color: $light-grey;
+  border-radius: 10px;
+  border: 1px solid $less-light-grey;
+
+  position:relative;
+  width:100%;
+  overflow:none;
+
+  .projectResumeImage{
+    margin-top:10px;
+    margin-left:10px;
+  }
+
+  .projectResumeTitle{
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    margin-left:10px;
+
+    img{
+      display: inline-block;
+    }
+  }
+
+  .projectResumeText{
+    margin-top:10px;
+    margin-left:10px;
+    font-size: 13px !important;
+
+    .projectResumePresentation{
+      height: 129px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 7;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  .projectResumeInfo{
+
+    width:100%;
+    padding-top:5px;
+    border-top:1px solid black;
+
+    .objective, .remaining{
+      display: inline-block;
+      margin-left:10px;
+    }
+
+    .sub{
+      font-weight: bold;
+      margin-bottom:0;
+    }
+  }
+}

@@ -51,6 +51,8 @@ GEM
     bootstrap-sass (3.3.5.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.3.0)
+    bootstrap-will_paginate (0.0.10)
+      will_paginate
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
@@ -300,6 +302,7 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
+    will_paginate (3.0.7)
 
 PLATFORMS
   x86-mingw32
@@ -307,6 +310,7 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk (~> 1.36.1)
   bootstrap-sass
+  bootstrap-will_paginate
   byebug
   carrierwave
   coderay
@@ -330,3 +334,4 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
+  will_paginate

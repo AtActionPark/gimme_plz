@@ -1,7 +1,31 @@
 <a href="/projects/<%= project.id %>">
-  <li class="projectThumb">
-    <%= image_tag project.mainpicture.url(:thumb)  %>
-    <span class="title"><%=  project.title %></span>
-    <p class="presentation"><%= project.presentation %><p>
-  </li>
+<li class="col-sm-3">
+  <div class="projectIndex">
+
+    <div class="projectResumeImage">
+      <%= image_tag project.mainpicture.url(:thumb) %>
+      <div class="projectResumeTitle">
+        <span><%= project.title %></span>
+      </div>
+    </div>
+
+    <div class="projectResumeText">
+      <div class="projectResumePresentation">
+        <%= project.presentation %>
+      </div>
+    </div>
+
+    <div class="projectResumeInfo">
+      <div class="objective">
+        <p class="sub"><%= project.amount %>€</p>
+        <p>sur <%= project.objective %>€</p>
+      </div>
+       <div class="remaining">
+        <p class="sub"><%= project.remainingTime %></p>
+        <p >Jours restant </p>
+      </div>
+    </div>
+
+  </div>
+</li>
 </a>

@@ -40,6 +40,8 @@ gem 'redcarpet'
 gem 'coderay'
 gem 'fog', '~> 1.24'
 gem 'figaro'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 
 group :development, :test do

@@ -1,3 +1,66 @@
-// Place all the styles related to the projects controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ .projectShow{
+
+  .projectTitle{
+    text-align: center;
+  }
+  .subTitle{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top:20px;
+    text-decoration: underline;
+  }
+
+  .presentation{
+    $size : 300px;
+    position:relative;
+
+    .projectPicture{
+      display:inline-block;
+      width: 50%;
+      min-height:$size;
+
+      img{
+        max-width: 100%;
+      }
+    }
+
+    .aside{
+      display:inline-block;
+      position:absolute;
+      top:20px;
+      width: 49%;
+      min-height:$size;
+      
+      .sub{
+        font-weight: bold;
+        font-size: 40px;
+        margin:0 0;
+        padding:0 0;
+      }
+      .asideElement{
+        margin-left:40px;
+      }
+      form{
+        margin-top:20px;
+        margin-left:40px;
+
+        .field{
+          display: inline-block;
+          
+          input{
+            width:100px;
+          }
+        }
+      }
+      .connect{
+        margin-top:10px;
+        form{
+          margin-left:0;
+        }
+      }
+
+    }
+  }
+ }

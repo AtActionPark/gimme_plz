@@ -1,0 +1,20 @@
+.navbar{
+  background-color   : white;
+  #logo {
+    float            : left;
+    margin-right     : 10px;
+    font-size        : 1.7em;
+    color            : #000;
+    text-transform   : uppercase;
+    letter-spacing   : -1px;
+    padding-top      : 9px;
+    font-weight      : bold;
+    &:link{
+      text-decoration: none;
+    }
+    &:hover{
+      color          : #000;
+      text-decoration: none;
+    }
+  }
+}

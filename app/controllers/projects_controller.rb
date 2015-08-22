@@ -29,7 +29,11 @@ class ProjectsController < ApplicationController
   end
 
   def index
-    @projects = Project.all
+    @projects = Project.paginate(page: params[:page], per_page: 15).order('created_at DESC')
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def show
