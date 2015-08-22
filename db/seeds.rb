@@ -104,7 +104,7 @@ There's actually a lot more to Markdown than this. See the official [introductio
                 timelimit: 25
   )
 
-200.times do |i|
+20.times do |i|
 Project.create!(title: "TestProject#{i}",
                 presentation: "Ceci est la presentation du projet #{i}. La taille est illimitée pour la page projet, mais limitées à 7 ligne sur la fiche de présentation du projet. Fonctionne uniquement sur chrome. Besoin de trouver une solution pour les autres browsers. ",
                 objective: 1000,
