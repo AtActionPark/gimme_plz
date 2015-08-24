@@ -1,0 +1,11 @@
+
+<%= form_for projects_path, method: :get do |f| %>
+  <p>
+    <%= f.label "Search for" %>
+    <%= text_field_tag :q, params[:q] %>
+    <%= submit_tag "Go", name: nil %>
+    <span> <%= pluralize(@projectsSearch.count, 'result')%> </span>
+  </p>
+  
+<% end %>
+

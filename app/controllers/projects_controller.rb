@@ -29,7 +29,15 @@ class ProjectsController < ApplicationController
   end
 
   def index
-    @projects = Project.paginate(page: params[:page], per_page: 15).order('created_at DESC')
+    @filterrific = initialize_filterrific(
+    Project,
+    params[:filterrific],
+    select_options:{
+      with_category: Project.options_for_category
+    }
+    ) or return
+    @projects = @filterrific.find.page(params[:page])
+
     respond_to do |format|
       format.html
       format.js
@@ -42,14 +50,14 @@ class ProjectsController < ApplicationController
     @remainingtime = @project.remainingTime
   end
 
-
   private
     def project_params
-      params.require(:project).permit(:title, :mainpicture, :presentation, :objective, :timelimit, :description)
+      params.require(:project).permit(:title, :mainpicture, :presentation, :objective, :timelimit, :description, :category)
     end
 
     def correct_user
       @user = Project.find(params[:id]).user
       redirect_to(root_url) unless current_user == @user
     end
+
 end

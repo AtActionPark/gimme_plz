@@ -22,6 +22,10 @@
   <%= f.number_field :timelimit %><br>
   <br>
 
+  <%= f.label :'Categorie' %><br>
+  <%= f.select :category, ['Art', 'BD', 'Artisanat', 'Danse', 'Design', 'Mode', 'Cinema & video', 'Gastronomie', 'Jeux', 'Journalisme', 'Musique', 'Photographie', 'Edition', 'Technologie', 'Theatre'] %>
+  <br>
+
   <%= f.label :'Description - Markdown' %><br>
   <%= f.text_area(:description, cols: "100", rows: "10") %><br>
   <br>

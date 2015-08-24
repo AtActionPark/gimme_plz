@@ -42,6 +42,9 @@ gem 'fog', '~> 1.24'
 gem 'figaro'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+gem 'filterrific'
 
 
 group :development, :test do

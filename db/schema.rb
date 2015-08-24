@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150821104334) do
+ActiveRecord::Schema.define(version: 20150824094741) do
 
   create_table "donations", force: :cascade do |t|
     t.integer  "amount"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20150821104334) do
     t.datetime "mainpicture_updated_at"
     t.integer  "amount",                   default: 0
     t.integer  "timelimit"
+    t.string   "category"
   end
 
   add_index "projects", ["user_id", "created_at"], name: "index_projects_on_user_id_and_created_at"

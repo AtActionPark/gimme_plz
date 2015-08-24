@@ -2,20 +2,20 @@
 <li class="col-sm-3">
   <div class="projectIndex">
 
-    <div class="projectResumeImage">
+    <div class="projectIndexImage">
       <%= image_tag project.mainpicture.url(:thumb) %>
-      <div class="projectResumeTitle">
+      <div class="projectIndexTitle">
         <span><%= project.title %></span>
       </div>
     </div>
 
-    <div class="projectResumeText">
-      <div class="projectResumePresentation">
+    <div class="projectIndexText">
+      <div class="projectIndexPresentation">
         <%= project.presentation %>
       </div>
     </div>
 
-    <div class="projectResumeInfo">
+    <div class="projectIndexInfo">
       <div class="objective">
         <p class="sub"><%= project.amount %>€</p>
         <p>sur <%= project.objective %>€</p>

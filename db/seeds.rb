@@ -101,7 +101,8 @@ There's actually a lot more to Markdown than this. See the official [introductio
 
 ",
                 amount: 0,
-                timelimit: 25
+                timelimit: 25,
+                category: 'Musique'
   )
 
 20.times do |i|
@@ -112,7 +113,8 @@ Project.create!(title: "TestProject#{i}",
                 mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','clem2.png')),
                 description: "Description du projet #{i}",
                 amount: 0,
-                timelimit: 25
+                timelimit: 25,
+                category: 'Musique'
   )
 end
 
