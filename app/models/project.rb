@@ -51,7 +51,7 @@ class Project < ActiveRecord::Base
   end
 
   def percentage
-    amount.to_f/objective.to_f*100
+    (amount.to_f/objective.to_f*100).to_i
   end
 
   filterrific(
