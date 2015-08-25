@@ -1,31 +1,45 @@
 <a href="/projects/<%= project.id %>">
 <li class="col-sm-3">
-  <div class="projectIndex">
+  <div class="projectResume">
 
-    <div class="projectIndexImage">
+    <div class="projectResumeImage">
       <%= image_tag project.mainpicture.url(:thumb) %>
-      <div class="projectIndexTitle">
+      <div class="projectResumeTitle">
         <span><%= project.title %></span>
       </div>
     </div>
 
-    <div class="projectIndexText">
-      <div class="projectIndexPresentation">
+    <div class="projectResumeText">
+      <div class="projectResumePresentation">
         <%= project.presentation %>
       </div>
     </div>
 
-    <div class="projectIndexInfo">
+    
+
+    <div class="projectResumeInfo">
+      <div class="category">
+          <%= project.category %>
+      </div>
+
       <div class="objective">
         <p class="sub"><%= project.amount %>€</p>
         <p>sur <%= project.objective %>€</p>
       </div>
+
+      <div class="progressKnob"> 
+        <input type='text' value="<%= project.percentage %>" class="dial" data-readOnly="true" data-width="40" data-height="40" data-bgColor="#d3d3d3" data-fgColor="#23527c" data-thickness="0.1" data-fontWeight="bold">
+        <script>
+          $(function() {
+              $(".dial").knob();
+          });
+        </script>
+      </div>
+
        <div class="remaining">
-        <p class="sub"><%= project.remainingTime %></p>
-        <p >Jours restant </p>
+        <p ><%= project.remainingTime %> Jours restant</p>
       </div>
     </div>
-
   </div>
 </li>
 </a>

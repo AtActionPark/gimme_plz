@@ -9,13 +9,7 @@
 
 <div class=" selection">
   <h2>Notre sélection :</h1>
-  <ul class="row">
-  <% for @project in @projects %>
-    <a href="/projects/<%= @project.id %>">
-      <%= render 'projects/projectResume' %>
-    </a>
-  <% end %>
-  </ul>
+  <%= render @projects %>
 </div>
 
 <div class=" partners">

@@ -36,6 +36,7 @@ class ProjectsController < ApplicationController
       with_category: Project.options_for_category
     }
     ) or return
+    
     @projects = @filterrific.find.page(params[:page])
 
     respond_to do |format|

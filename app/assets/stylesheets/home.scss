@@ -50,12 +50,24 @@ $transparentDarkBlue: rgba(70,164,181,0.5);
   padding:20px;
   background-color: $lightBlue;
   width           :100%;
+  overflow: hidden;
 
   li{
     display:inline-block;
     margin-bottom:10px;
   }
+
+  @media screen and (max-width: 768px) {
+   li {
+    width: 100%;
+  }
 }
+
+  .projectIndex{
+    background-color: #E5E5E5 !important;
+  }
+}
+
 
 
 .partners{

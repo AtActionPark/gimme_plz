@@ -23,7 +23,7 @@
   <br>
 
   <%= f.label :'Categorie' %><br>
-  <%= f.select :category, ['Art', 'BD', 'Artisanat', 'Danse', 'Design', 'Mode', 'Cinema & video', 'Gastronomie', 'Jeux', 'Journalisme', 'Musique', 'Photographie', 'Edition', 'Technologie', 'Theatre'] %>
+  <%= f.select :category, Project.options_for_category %>
   <br>
 
   <%= f.label :'Description - Markdown' %><br>

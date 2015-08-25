@@ -1,37 +1,37 @@
 <% provide(:title, "Projets") %>
 
-<h1>Explorer</h1>
+<h1>Tous les projets</h1>
 
 
 
 <div id="projects" >
-<%= form_for_filterrific @filterrific do |f| %>
-  <div class="filterrific">
-    Search
-    <%# give the search field the 'filterrific-periodically-observed' class for live updates %>
-    <%= f.text_field(
-      :search_query,
-      class: 'filterrific-periodically-observed'
-    ) %>
-  </div>
-  <div class="filterrific">
-    Category
-    <%= f.select(
-      :with_category,
-      @filterrific.select_options[:with_category],
-      { include_blank: '- Any -' }
-    ) %>
-  </div>
+  <%= form_for_filterrific @filterrific do |f| %>
+    <div class="filterrific">
+      Search
+      <%# give the search field the 'filterrific-periodically-observed' class for live updates %>
+      <%= f.text_field(
+        :search_query,
+        class: 'filterrific-periodically-observed'
+      ) %>
+    </div>
+    <div class="filterrific">
+      Category
+      <%= f.select(
+        :with_category,
+        @filterrific.select_options[:with_category],
+        { include_blank: '- Any -' }
+      ) %>
+    </div>
 
-  <div class="filterrific">
-    <%= link_to(
-      'Reset filters',
-      reset_filterrific_url,
-    ) %>
-  </div>
-  <%# add an automated spinner to your form when the list is refreshed %>
-  <%= render_filterrific_spinner %>
-<% end %>
+    <div class="filterrific">
+      <%= link_to(
+        'Reset filters',
+        reset_filterrific_url,
+      ) %>
+    </div>
+    <%# add an automated spinner to your form when the list is refreshed %>
+    <%= render_filterrific_spinner %>
+  <% end %>
 
   <%= render @projects %>
 </div>

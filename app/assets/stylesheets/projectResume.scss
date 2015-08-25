@@ -2,45 +2,77 @@
 $lightBlue: #d6ebf2;
 $light-grey:#E5E5E5;
 $less-light-grey:#d3d3d3;
+$size:129px;
+
+.center{
+  width: 515px;
+  margin: 0 auto;
+}
+.filterrific{
+  display:inline-block;
+}
+#filterrific_filter{
+margin-bottom:10px;
+}
+#infinite-scrolling, .pagination{
+  clear:both;
+  display:block;
+}
+#projects{
+  li{
+    display:inline-block;
+    margin-bottom:10px;
+
+  }
+}
+@media screen and (max-width: 768px) {
+  #projects li {
+    width: 100%;
+  }
+}
+.selection .projectResume{
+  background-color: $light-grey;
+}
 
 .projectResume{
+  margin:10px 0;
+  border: 1px solid $less-light-grey;
+  border-radius: 5px;
+  position:relative;
+  width:100%;
+  overflow:none;
+  background-color: white;
 
   li{
     display:inline-block;
     margin-bottom:10px;
   }
-  
-  background-color: $light-grey;
-  border-radius: 10px;
-  border: 1px solid $less-light-grey;
-
-  position:relative;
-  width:100%;
-  overflow:none;
 
   .projectResumeImage{
     margin-top:10px;
-    margin-left:10px;
+    text-align  :center;
+    
   }
 
   .projectResumeTitle{
-    display: inline-block;
+    display: block;
     text-align: center;
     font-weight: bold;
-    margin-left:10px;
 
     img{
-      display: inline-block;
+      margin-left:auto;
+      margin-right:auto;
+      width:100px;
     }
   }
 
   .projectResumeText{
     margin-top:10px;
-    margin-left:10px;
+    padding:10px;
     font-size: 13px !important;
 
     .projectResumePresentation{
-      height: 129px;
+      height: $size;
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
@@ -48,25 +80,63 @@ $less-light-grey:#d3d3d3;
       -webkit-box-orient: vertical;
     }
   }
-  .projectResumeCategory{
-    font-weight: bold;
-    margin-left: 10px;
-  }
+
+  
 
   .projectResumeInfo{
-
+    font-size:13px;
     width:100%;
     padding-top:5px;
     border-top:1px solid black;
+    overflow: hidden;
 
-    .objective, .remaining{
+    .category{
+      font-weight: bold;
+      text-align:center;
+      margin-bottom:5px;
+    }
+    .objective, .remaining, .progressKnob{
       display: inline-block;
-      margin-left:10px;
     }
 
     .sub{
       font-weight: bold;
       margin-bottom:0;
+    }
+
+    .objective{
+      float:left;
+      margin-left:10px;
+      width:80px;
+    }
+
+    .remaining{
+      width:105px;
+      display: inline-block;
+      clear:none;
+      float:right;
+      padding-top:10px;
+
+
+      @media screen and (min-width: 769px){
+        display:block;
+        float:none;
+        clear:both;
+        margin:0 auto;
+        padding-top:0;
+      }
+
+      @media screen and (min-width: 1200px) {
+        display: inline-block;
+        float:right;
+        clear:none;
+        padding-top:10px;
+      }
+    }
+
+    .progressKnob{
+      width:40px;
+      margin:0 auto;
     }
   }
 }

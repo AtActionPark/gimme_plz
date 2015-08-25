@@ -1,5 +1,3 @@
-require 'elasticsearch/model'
-
 class Project < ActiveRecord::Base
 
   belongs_to :user
@@ -52,6 +50,10 @@ class Project < ActiveRecord::Base
     (p.timelimit - (Time.now - p.created_at)/1.day).floor
   end
 
+  def percentage
+    amount.to_f/objective.to_f*100
+  end
+
   filterrific(
     default_filter_params: {},
     available_filters: [
@@ -60,13 +62,13 @@ class Project < ActiveRecord::Base
     ]
   )
 
-  # filters on 'country_id' foreign key
+  # filters on 'categories' foreign key
   scope :with_category, lambda { |categories|
     where(category: [*categories])
   }
 
   scope :search_query, lambda { |query|
-    # Searches the students table on the 'first_name' and 'last_name' columns.
+    # Searches query on the 'title' and 'description' columns.
     # Matches using LIKE, automatically appends '%' to each term.
     # LIKE is case INsensitive with MySQL, however it is case
     # sensitive with PostGreSQL. To make it work in both worlds,
