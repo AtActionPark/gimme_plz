@@ -22,6 +22,16 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def addAdmin
+    User.find(params[:id]).update_attribute('admin', true);
+    redirect_to users_url
+  end
+
+  def removeAdmin
+    User.find(params[:id]).update_attribute('admin', false);
+    redirect_to users_url
+  end
+
 
   private
 

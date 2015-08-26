@@ -2,7 +2,14 @@
   <%= image_tag user.avatar.url(:thumb)  %>
   <%= link_to user.name, user %>
   <% if current_user.admin? && current_user != user %>
-     <%= link_to "delete", user, method: :delete,
+  <span> ---- </span>
+    <%= link_to "Delete", user, method: :delete,
                                   data: { confirm: "You sure?" } %>
+                                  <span> - </span>
+    <% if user.admin? %>
+      <%= link_to "Remove Admin Provileges", {:controller => "users", :action => "removeAdmin", :id => user.id } %>
+    <% else %>
+      <%= link_to "Add Admin Provileges", {:controller => "users", :action => "addAdmin", :id => user.id } %>
+    <% end %>
   <% end %>
 </li>

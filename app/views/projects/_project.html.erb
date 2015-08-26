@@ -1,6 +1,6 @@
 <a href="/projects/<%= project.id %>">
 <li class="col-sm-3">
-  <div class="projectResume">
+  <div class="projectResume <%= 'finished' if project.remainingTime<= 0 %>">
 
     <div class="projectResumeImage">
       <%= image_tag project.mainpicture.url(:thumb) %>

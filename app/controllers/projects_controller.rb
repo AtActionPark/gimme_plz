@@ -26,15 +26,18 @@ class ProjectsController < ApplicationController
   end
 
   def destroy
+    Project.find(params[:id]).destroy
+    flash[:success] = "Project deleted"
+    redirect_to projects_path
   end
 
   def index
     @filterrific = initialize_filterrific(
-    Project,
-    params[:filterrific],
-    select_options:{
-      with_category: Project.options_for_category
-    }
+      Project,
+      params[:filterrific],
+      select_options:{
+        with_category: Project.options_for_category
+      }
     ) or return
     
     @projects = @filterrific.find.page(params[:page])
@@ -58,7 +61,7 @@ class ProjectsController < ApplicationController
 
     def correct_user
       @user = Project.find(params[:id]).user
-      redirect_to(root_url) unless current_user == @user
+      redirect_to(root_url) unless current_user == @user || current_user.admin?
     end
 
 end

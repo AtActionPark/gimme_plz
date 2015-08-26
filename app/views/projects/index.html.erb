@@ -5,14 +5,18 @@
 
 
 <div id="projects" >
+  
+
   <%= form_for_filterrific @filterrific do |f| %>
     <div class="filterrific">
       Search
       <%# give the search field the 'filterrific-periodically-observed' class for live updates %>
       <%= f.text_field(
-        :search_query,
-        class: 'filterrific-periodically-observed'
+        :search_query
       ) %>
+    </div>
+    <div class="filterrific">
+    <%# Current <%= f.check_box :with_not_expired %> 
     </div>
     <div class="filterrific">
       Category
@@ -22,6 +26,7 @@
         { include_blank: '- Any -' }
       ) %>
     </div>
+    <%= f.submit 'Filter' %>
 
     <div class="filterrific">
       <%= link_to(
@@ -33,7 +38,8 @@
     <%= render_filterrific_spinner %>
   <% end %>
 
-  <%= render @projects %>
+  <%= render @projects  %>
+  
 </div>
 
 

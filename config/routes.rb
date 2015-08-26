@@ -16,5 +16,8 @@ Rails.application.routes.draw do
   get 'contact' => 'static_pages#contact'
   get 'signup'  => 'users#new'
   get 'newProject'  => 'static_pages#newProject'
+
+  get 'users/addAdmin/:id', :to => "users#addAdmin"
+  get 'users/removeAdmin/:id', :to => "users#removeAdmin"
  
 end

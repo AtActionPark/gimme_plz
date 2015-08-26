@@ -26,7 +26,15 @@ class Project < ActiveRecord::Base
   end
 
   validate do |project|
+    project.errors.add(:base, "L'objectif doit être positif ")  if project.objective< 0
+  end
+
+  validate do |project|
     project.errors.add(:base, "Entrer une limite de temps")  if project.timelimit.blank?
+  end
+
+  validate do |project|
+    project.errors.add(:base, "La limite de jours doit être positive ")  if project.timelimit< 0
   end
 
    validate do |project|
@@ -47,7 +55,8 @@ class Project < ActiveRecord::Base
 
   def remainingTime
     p = Project.find(self.id)
-    (p.timelimit - (Time.now - p.created_at)/1.day).floor
+    [(p.timelimit - (Time.now - p.created_at)/1.day).ceil,0].max
+
   end
 
   def percentage
@@ -59,6 +68,7 @@ class Project < ActiveRecord::Base
     available_filters: [
       :search_query,
       :with_category
+      #:with_not_expired
     ]
   )
 
@@ -66,6 +76,12 @@ class Project < ActiveRecord::Base
   scope :with_category, lambda { |categories|
     where(category: [*categories])
   }
+
+  # filters on remainig time >0
+  #scope :with_not_expired, lambda { |flag|
+  #  return nil  if 0 == flag
+  #  where( "expired = ?", true)
+  #}
 
   scope :search_query, lambda { |query|
     # Searches query on the 'title' and 'description' columns.

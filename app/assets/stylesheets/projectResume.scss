@@ -2,6 +2,7 @@
 $lightBlue: #d6ebf2;
 $light-grey:#E5E5E5;
 $less-light-grey:#d3d3d3;
+$light-red:#ffe5e5;
 $size:129px;
 $border-radius:8px;
 
@@ -33,6 +34,9 @@ margin-bottom:10px;
 }
 .selection .projectResume{
   background-color: $light-grey;
+}
+.projectResume.finished{
+  background-color: $light-red;
 }
 
 .projectResume{
