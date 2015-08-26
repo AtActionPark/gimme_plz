@@ -3,6 +3,7 @@ $lightBlue: #d6ebf2;
 $light-grey:#E5E5E5;
 $less-light-grey:#d3d3d3;
 $size:129px;
+$border-radius:8px;
 
 .center{
   width: 515px;
@@ -37,7 +38,7 @@ margin-bottom:10px;
 .projectResume{
   margin:10px 0;
   border: 1px solid $less-light-grey;
-  border-radius: 5px;
+  border-radius: $border-radius;
   position:relative;
   width:100%;
   overflow:none;
@@ -49,25 +50,23 @@ margin-bottom:10px;
   }
 
   .projectResumeImage{
-    margin-top:10px;
     text-align  :center;
-    
+    img{
+      margin-left:auto;
+      margin-right:auto;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+      max-width:100%;
+    }
   }
 
   .projectResumeTitle{
     display: block;
     text-align: center;
     font-weight: bold;
-
-    img{
-      margin-left:auto;
-      margin-right:auto;
-      width:100px;
-    }
   }
 
   .projectResumeText{
-    margin-top:10px;
     padding:10px;
     font-size: 13px !important;
 
@@ -89,6 +88,7 @@ margin-bottom:10px;
     padding-top:5px;
     border-top:1px solid black;
     overflow: hidden;
+    text-align:center;
 
     .category{
       font-weight: bold;
@@ -105,6 +105,7 @@ margin-bottom:10px;
     }
 
     .objective{
+      text-align: left;
       float:left;
       margin-left:10px;
       width:80px;
@@ -116,7 +117,6 @@ margin-bottom:10px;
       clear:none;
       float:right;
       padding-top:10px;
-
 
       @media screen and (min-width: 769px){
         display:block;
@@ -136,7 +136,20 @@ margin-bottom:10px;
 
     .progressKnob{
       width:40px;
+      float:none;
+      display: inline-block;
       margin:0 auto;
+
+      @media screen and (min-width: 769px){
+        display:inline-block;
+        float:right;
+        margin-right:5px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        display: inline-block;
+        float:none;
+      }
     }
   }
 }

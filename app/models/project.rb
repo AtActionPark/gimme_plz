@@ -37,7 +37,7 @@ class Project < ActiveRecord::Base
     project.errors.add(:base, "Entrer une description")  if project.description.blank?
   end
 
-  has_attached_file :mainpicture, :styles => { :medium => "300x300>", :thumb => "100x100#" }
+  has_attached_file :mainpicture, :styles => { :medium => "300x300>", :thumb => "253x253#" }
 
   validates_attachment_content_type :mainpicture, :content_type => /\Aimage\/.*\Z/
 
