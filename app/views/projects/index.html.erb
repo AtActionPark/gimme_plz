@@ -2,24 +2,20 @@
 
 <h1>Tous les projets</h1>
 
-
-
 <div id="projects" >
-  
-
   <%= form_for_filterrific @filterrific do |f| %>
     <div class="filterrific">
-      Search
+      Rechercher
       <%# give the search field the 'filterrific-periodically-observed' class for live updates %>
       <%= f.text_field(
         :search_query
       ) %>
     </div>
     <div class="filterrific">
-    <%# Current <%= f.check_box :with_not_expired %> 
+       En cours <%= f.check_box :with_not_expired %> 
     </div>
     <div class="filterrific">
-      Category
+      Categorie
       <%= f.select(
         :with_category,
         @filterrific.select_options[:with_category],
@@ -39,7 +35,6 @@
   <% end %>
 
   <%= render @projects  %>
-  
 </div>
 
 

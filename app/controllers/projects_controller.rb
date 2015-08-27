@@ -61,7 +61,7 @@ class ProjectsController < ApplicationController
 
     def correct_user
       @user = Project.find(params[:id]).user
-      redirect_to(root_url) unless current_user == @user || current_user.admin?
+      redirect_to(root_url) unless user_signed_in? && (current_user == @user || current_user.admin?)
     end
 
 end

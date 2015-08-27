@@ -55,7 +55,11 @@ class Project < ActiveRecord::Base
 
   def remainingTime
     p = Project.find(self.id)
-    [(p.timelimit - (Time.now - p.created_at)/1.day).ceil,0].max
+    rem = [(p.timelimit - (Time.now - p.created_at)/1.day).ceil,0].max
+    if rem <= 0
+      p.update_attribute('expired', true)
+    end
+    rem
 
   end
 
@@ -67,8 +71,8 @@ class Project < ActiveRecord::Base
     default_filter_params: {},
     available_filters: [
       :search_query,
-      :with_category
-      #:with_not_expired
+      :with_category,
+      :with_not_expired
     ]
   )
 
@@ -77,11 +81,14 @@ class Project < ActiveRecord::Base
     where(category: [*categories])
   }
 
-  # filters on remainig time >0
-  #scope :with_not_expired, lambda { |flag|
-  #  return nil  if 0 == flag
-  #  where( "expired = ?", true)
-  #}
+  # filters on not expired
+  scope :with_not_expired, lambda { |flag|
+    if flag == '0'
+      all
+    else
+      where( expired: false || nil)
+    end
+  }
 
   scope :search_query, lambda { |query|
     # Searches query on the 'title' and 'description' columns.

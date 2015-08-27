@@ -5,7 +5,7 @@ User.create(name:  "clement",
              avatar: File.open(File.join(Rails.root, 'db', 'fixtures','clem2.png')),
              admin: true)
 
-Project.create!(title: "TestProject",
+Project.create!(title: "Gimme $ plz - presentation",
                 presentation: "Ceci est la presentation du projet. La taille est illimitée pour la page projet, mais limitées à 7 ligne sur la fiche de présentation du projet. Fonctionne uniquement sur chrome. Besoin de trouver une solution pour les autres browsers.",
                 objective: 1000,
                 user_id: 1,
@@ -100,22 +100,144 @@ There's actually a lot more to Markdown than this. See the official [introductio
 
 
 ",
-                amount: 0,
-                timelimit: 25,
-                category: 'Musique'
+                amount: 1000,
+                timelimit: 0,
+                category: 'Technologie'
   )
 
-20.times do |i|
-Project.create!(title: "TestProject#{i}",
-                presentation: "Ceci est la presentation du projet #{i}. La taille est illimitée pour la page projet, mais limitées à 7 ligne sur la fiche de présentation du projet. Fonctionne uniquement sur chrome. Besoin de trouver une solution pour les autres browsers. ",
+Project.create!(title: "GimmeSomeBlé",
+                presentation: "Salut je m'appelle flo, j'adore le blé. ",
+                objective: 50,
+                user_id: 1,
+                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','flo.jpg')),
+                description: "Je voudrai m'acheter beaucoup de blé, parceque c'est une céréale que je trouve super cool",
+                amount: 20,
+                timelimit: 5,
+                category: 'Gastronomie'
+  )
+
+Project.create!(title: "Mona",
+                presentation: "Je suis une peinture, lol. ",
                 objective: 1000,
                 user_id: 1,
-                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','clem2.png')),
-                description: "Description du projet #{i}",
+                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','mona.jpg')),
+                description: "nope",
+                amount: 200,
+                timelimit: 100,
+                category: 'Art'
+  )
+
+Project.create!(title: "Placeholder - Musique",
+                presentation: "Project musique standard ",
+                objective: 1000,
+                user_id: 1,
+                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','missing-image.png')),
+                description: "nope",
                 amount: 0,
-                timelimit: 25,
+                timelimit: 20,
                 category: 'Musique'
   )
-end
+Project.create!(title: "Placeholder - BD",
+                presentation: "Project BD standard ",
+                objective: 1000,
+                user_id: 1,
+                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','missing-image.png')),
+                description: "nope",
+                amount: 0,
+                timelimit: 10,
+                category: 'BD'
+  )
+Project.create!(title: "Placeholder - Danse",
+                presentation: "Project Danse standard ",
+                objective: 1000,
+                user_id: 1,
+                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','missing-image.png')),
+                description: "nope",
+                amount: 0,
+                timelimit: 9,
+                category: 'Danse'
+  )
+Project.create!(title: "Placeholder - Design",
+                presentation: "Project Design standard ",
+                objective: 1000,
+                user_id: 1,
+                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','missing-image.png')),
+                description: "nope",
+                amount: 0,
+                timelimit: 8,
+                category: 'Design'
+  )
+Project.create!(title: "Placeholder - Mode",
+                presentation: "Project Mode standard ",
+                objective: 1000,
+                user_id: 1,
+                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','missing-image.png')),
+                description: "nope",
+                amount: 0,
+                timelimit: 7,
+                category: 'Mode'
+  )
+Project.create!(title: "Placeholder - Cinema & video",
+                presentation: "Project Cinema & video standard ",
+                objective: 1000,
+                user_id: 1,
+                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','missing-image.png')),
+                description: "nope",
+                amount: 0,
+                timelimit: 6,
+                category: 'Cinema & video'
+  )
+Project.create!(title: "Placeholder - Jeux",
+                presentation: "Project Jeux standard ",
+                objective: 1000,
+                user_id: 1,
+                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','missing-image.png')),
+                description: "nope",
+                amount: 0,
+                timelimit: 5,
+                category: 'Jeux'
+  )
+Project.create!(title: "Placeholder - Journalisme",
+                presentation: "Project Journalisme standard ",
+                objective: 1000,
+                user_id: 1,
+                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','missing-image.png')),
+                description: "nope",
+                amount: 0,
+                timelimit: 4,
+                category: 'Journalisme'
+  )
+Project.create!(title: "Placeholder - Photographie",
+                presentation: "Project Photographie standard ",
+                objective: 1000,
+                user_id: 1,
+                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','missing-image.png')),
+                description: "nope",
+                amount: 0,
+                timelimit: 3,
+                category: 'Photographie'
+  )
+Project.create!(title: "Placeholder - Edition",
+                presentation: "Project Edition standard ",
+                objective: 1000,
+                user_id: 1,
+                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','missing-image.png')),
+                description: "nope",
+                amount: 0,
+                timelimit: 2,
+                category: 'Edition'
+  )
+Project.create!(title: "Placeholder - Theatre",
+                presentation: "Project Theatre standard ",
+                objective: 1000,
+                user_id: 1,
+                mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','missing-image.png')),
+                description: "nope",
+                amount: 0,
+                timelimit: 1,
+                category: 'Theatre'
+  )
+
+
 
 

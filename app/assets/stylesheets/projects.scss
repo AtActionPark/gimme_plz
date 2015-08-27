@@ -1,3 +1,4 @@
+$less-light-red:#ff6666;
 
  .projectShow{
 
@@ -62,7 +63,7 @@
       }
       .finished{
         margin-top:20px;
-        color: red;
+        color: $less-light-red;
       }
     }
   }

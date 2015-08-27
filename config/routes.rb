@@ -19,5 +19,8 @@ Rails.application.routes.draw do
 
   get 'users/addAdmin/:id', :to => "users#addAdmin"
   get 'users/removeAdmin/:id', :to => "users#removeAdmin"
+
+  get 'selection', :to => "static_pages#selection"
+  post 'selection', :to => "static_pages#selection"
  
 end

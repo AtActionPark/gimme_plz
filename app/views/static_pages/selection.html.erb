@@ -1,0 +1,26 @@
+<div class="explanation">
+<p>Definition des projets de selection en premiere page</p>
+<p>Les projets sont identifés par leur ID, visible dans la barre d'adresse sur la page du projet</p>
+<p>Attention : si les projets sont supprimés, ils apparaissent toujours dans la liste, il faut les supprimer manuellement</p>
+</div>
+
+
+<div class="adminSelection">
+  <div class="currentSelection">
+    Selection actuelle : <% for p in @selection do %>
+      <%= p.project_id %>,
+    <% end %>
+  </div>
+
+  <%= form_tag do %>
+    <%= label_tag(:add, "Ajouter") %>
+    <%= text_field_tag(:add) %>
+    <%= submit_tag("Ok") %>
+  <% end %>
+
+  <%= form_tag do %>
+    <%= label_tag(:remove, "Supprimer") %>
+    <%= text_field_tag(:remove) %>
+    <%= submit_tag("Ok") %>
+  <% end %>
+</div>

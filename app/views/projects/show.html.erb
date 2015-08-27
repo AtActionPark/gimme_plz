@@ -8,6 +8,8 @@
   <div class="presentation">
     <div class="projectPicture">
       <%= image_tag @project.mainpicture.url(:medium) %>
+      <p><b>Categorie: </b><%= @project.category %></p>
+      <p><%= link_to @project.user.name, @project.user if !@project.user.nil? %></p>
     </div>
 
     <div class="aside">
@@ -21,7 +23,7 @@
         <p >Contributeurs</p>
       </div>
 
-      <% if @remainingtime>0 %>
+      <% if !@project.expired %>
         <div class="asideElement">
           <p class="sub remainingDays"><%= @remainingtime %></p>
           <p >Jours restant sur <%= @project.timelimit %> </p>
@@ -49,7 +51,7 @@
 
     </div>
   </div>
-  <span><%= @project.category %></span>
+  
 
   <div class="projectPresentation">
    <p class="subTitle">Presentation</p>
@@ -64,11 +66,11 @@
 </div>
 <br><br>
 
-<% if current_user == @project.user || current_user.admin? %>
+<% if user_signed_in? && (current_user == @project.user || current_user.admin?) %>
   <p><%= link_to "Editer le projet", edit_project_path %></p>
 <% end %>
 
-<% if current_user.admin? %>
+<% if user_signed_in? && current_user.admin? %>
 <%= link_to "Delete", @project, method: :delete,
                                   data: { confirm: "You sure?" } %>
 <% end %>
