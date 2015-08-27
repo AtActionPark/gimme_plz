@@ -234,7 +234,7 @@ Project.create!(title: "Placeholder - Theatre",
                 mainpicture: File.open(File.join(Rails.root, 'db', 'fixtures','missing-image.png')),
                 description: "nope",
                 amount: 0,
-                timelimit: 1,
+                timelimit: 0,
                 category: 'Theatre'
   )
 
