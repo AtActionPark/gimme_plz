@@ -105,7 +105,7 @@ There's actually a lot more to Markdown than this. See the official [introductio
                 category: 'Technologie'
   )
 
-Project.create!(title: "GimmeSomeBlé",
+Project.create(title: "GimmeSomeBlé",
                 presentation: "Salut je m'appelle flo, j'adore le blé. ",
                 objective: 50,
                 user_id: 1,
@@ -116,7 +116,7 @@ Project.create!(title: "GimmeSomeBlé",
                 category: 'Gastronomie'
   )
 
-Project.create!(title: "Mona",
+Project.create(title: "Mona",
                 presentation: "Je suis une peinture, lol. ",
                 objective: 1000,
                 user_id: 1,
@@ -127,7 +127,7 @@ Project.create!(title: "Mona",
                 category: 'Art'
   )
 
-Project.create!(title: "Placeholder - Musique",
+Project.create(title: "Placeholder - Musique",
                 presentation: "Project musique standard ",
                 objective: 1000,
                 user_id: 1,
@@ -137,7 +137,7 @@ Project.create!(title: "Placeholder - Musique",
                 timelimit: 20,
                 category: 'Musique'
   )
-Project.create!(title: "Placeholder - BD",
+Project.create(title: "Placeholder - BD",
                 presentation: "Project BD standard ",
                 objective: 1000,
                 user_id: 1,
@@ -147,7 +147,7 @@ Project.create!(title: "Placeholder - BD",
                 timelimit: 10,
                 category: 'BD'
   )
-Project.create!(title: "Placeholder - Danse",
+Project.create(title: "Placeholder - Danse",
                 presentation: "Project Danse standard ",
                 objective: 1000,
                 user_id: 1,
@@ -157,7 +157,7 @@ Project.create!(title: "Placeholder - Danse",
                 timelimit: 9,
                 category: 'Danse'
   )
-Project.create!(title: "Placeholder - Design",
+Project.create(title: "Placeholder - Design",
                 presentation: "Project Design standard ",
                 objective: 1000,
                 user_id: 1,
@@ -167,7 +167,7 @@ Project.create!(title: "Placeholder - Design",
                 timelimit: 8,
                 category: 'Design'
   )
-Project.create!(title: "Placeholder - Mode",
+Project.create(title: "Placeholder - Mode",
                 presentation: "Project Mode standard ",
                 objective: 1000,
                 user_id: 1,
@@ -177,7 +177,7 @@ Project.create!(title: "Placeholder - Mode",
                 timelimit: 7,
                 category: 'Mode'
   )
-Project.create!(title: "Placeholder - Cinema & video",
+Project.create(title: "Placeholder - Cinema & video",
                 presentation: "Project Cinema & video standard ",
                 objective: 1000,
                 user_id: 1,
@@ -187,7 +187,7 @@ Project.create!(title: "Placeholder - Cinema & video",
                 timelimit: 6,
                 category: 'Cinema & video'
   )
-Project.create!(title: "Placeholder - Jeux",
+Project.create(title: "Placeholder - Jeux",
                 presentation: "Project Jeux standard ",
                 objective: 1000,
                 user_id: 1,
@@ -197,7 +197,7 @@ Project.create!(title: "Placeholder - Jeux",
                 timelimit: 5,
                 category: 'Jeux'
   )
-Project.create!(title: "Placeholder - Journalisme",
+Project.create(title: "Placeholder - Journalisme",
                 presentation: "Project Journalisme standard ",
                 objective: 1000,
                 user_id: 1,
@@ -207,7 +207,7 @@ Project.create!(title: "Placeholder - Journalisme",
                 timelimit: 4,
                 category: 'Journalisme'
   )
-Project.create!(title: "Placeholder - Photographie",
+Project.create(title: "Placeholder - Photographie",
                 presentation: "Project Photographie standard ",
                 objective: 1000,
                 user_id: 1,
@@ -217,7 +217,7 @@ Project.create!(title: "Placeholder - Photographie",
                 timelimit: 3,
                 category: 'Photographie'
   )
-Project.create!(title: "Placeholder - Edition",
+Project.create(title: "Placeholder - Edition",
                 presentation: "Project Edition standard ",
                 objective: 1000,
                 user_id: 1,
@@ -227,7 +227,7 @@ Project.create!(title: "Placeholder - Edition",
                 timelimit: 2,
                 category: 'Edition'
   )
-Project.create!(title: "Placeholder - Theatre",
+Project.create(title: "Placeholder - Theatre",
                 presentation: "Project Theatre standard ",
                 objective: 1000,
                 user_id: 1,
