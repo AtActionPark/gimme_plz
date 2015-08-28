@@ -69,6 +69,12 @@ margin-bottom:10px;
     display: block;
     text-align: center;
     font-weight: bold;
+    height:40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 
   .projectResumeText{
@@ -111,7 +117,7 @@ margin-bottom:10px;
       text-align: left;
       float:left;
       margin-left:10px;
-      width:80px;
+      width:60px;
     }
 
     .remaining{
@@ -155,6 +161,7 @@ margin-bottom:10px;
 
       @media screen and (min-width: 1200px) {
         display: inline-block;
+        margin-right:0;
         float:none;
       }
     }
