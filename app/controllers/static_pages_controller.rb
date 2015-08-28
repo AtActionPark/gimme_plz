@@ -23,7 +23,6 @@ class StaticPagesController < ApplicationController
         Selection.where("project_id = ?", selection_params[:remove]).take().destroy
       end
     end
-    
   end
 
   def create

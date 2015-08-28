@@ -24,7 +24,7 @@
 
       <div class="objective">
         <p class="sub"><%= project.amount %>€</p>
-        <p>sur <%= project.objective %>€</p>
+        <p>/ <%= project.objective %>€</p>
       </div>
 
       <div class="progressKnob"> 
@@ -38,9 +38,9 @@
 
        <div class="remaining">
        <% if !project.expired %>
-          <p ><%= project.remainingTime %> Jours restant</p>
+          <p ><%= project.remainingTime %> <%= I18n.t('remaining_days')%></p>
         <% else %>
-          <p class="finished">Projet terminé</p>
+          <p class="finished"><%= I18n.t('project_finished')%></p>
         <% end %>
       </div>
     </div>

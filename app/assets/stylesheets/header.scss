@@ -1,5 +1,4 @@
 .navbar{
-
   white-space: nowrap;
   background-color   : white;
   #logo {
@@ -19,6 +18,7 @@
       text-decoration: none;
     }
   }
+
 }
 
 /* avatar thumbnail*/
@@ -33,4 +33,11 @@
     overflow: hidden;
     text-align: center;
     img { width: 100% }
+}
+
+.flag{
+  width:22px;
+  position:relative;
+  top:14px;
+  left:15px;
 }

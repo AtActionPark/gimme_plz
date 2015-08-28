@@ -6,12 +6,12 @@
       <h1>
         <%= @user.name %>
       </h1>
-      <p><%= link_to "Edit profile", edit_user_registration_path %></p>
+      <p><%= link_to I18n.t('edit_profile'), edit_user_registration_path %></p>
     </section>
   </aside>
   <div class="col-md-8">
     <% if @user.projects.any? %>
-      <h3>projects (<%= @user.projects.count %>)</h3>
+      <h3><%= I18n.t('user_projects')%> (<%= @user.projects.count %>)</h3>
       <ol class="userProjects">
         <%= render @projects %>
       </ol>

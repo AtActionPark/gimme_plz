@@ -1,19 +1,18 @@
-
 <div class="topImage">
   <img id="mainImage" src="<%= image_url 'coffee-apple-iphone-desk.jpg' %>">
   <div class="overlay">
-    <span class="big"><%= link_to "LANCEZ VOTRE PROJET", newProject_path %></span>
-    <span class="medium"><%= link_to "DES AUJOURD'HUI", newProject_path %></span>
+    <span class="big"><%= link_to I18n.t('start_your_project'), newProject_path %></span>
+    <span class="medium"><%= link_to I18n.t('right_now'), newProject_path %></span>
   </div>
 </div>
 
 <div class=" selection">
-  <h2>Notre sélection :</h1>
+  <h2><%= I18n.t('our_selection')%></h1>
   <%= render @projects %>
 </div>
 
 <div class=" partners">
-  <h2>Nos partenaires</h1>
+  <h2><%= I18n.t('our_partners')%></h1>
   <a href="">
   <div class="partnerElement">
     <img class="partnerImage" src="<%= image_url 'TOD.png' %>">

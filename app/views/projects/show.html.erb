@@ -15,18 +15,18 @@
     <div class="aside">
       <div class="asideElement">
         <p class="sub amount"><%= @project.amount %>€</p>
-        <p>sur <%= @project.objective %>€</p>
+        <p><%= I18n.t('pledged_of')%> <%= @project.objective %>€</p>
       </div>
 
       <div class="asideElement">
         <p class="sub contributors"><%= @contributors %></p>
-        <p >Contributeurs</p>
+        <p>Contributeurs</p>
       </div>
 
       <% if !@project.expired %>
         <div class="asideElement">
           <p class="sub remainingDays"><%= @remainingtime %></p>
-          <p >Jours restant sur <%= @project.timelimit %> </p>
+          <p ><%= I18n.t('remaining_days_over')%> <%= @project.timelimit %> </p>
         </div>
 
 
@@ -34,18 +34,18 @@
           <%= form_for(@project.donations.build, remote: true) do |f| %>
             <%= f.hidden_field :project_id %>
             <div class="field">
-              <%= f.number_field :amount, placeholder: "Montant" %>
+              <%= f.number_field :amount, placeholder: I18n.t('amount') %>
             </div>
-            <%= f.submit "Contribuer", class: "btn btn-primary" %>
+            <%= f.submit I18n.t('donate'), class: "btn btn-primary" %>
           <% end %>
         <% else %>
           <div class="asideElement">
-          <div class="connect"><%= button_to("Se connecter", new_user_session_path, class: "btn btn-primary",:method => :get) %> </div>
+          <div class="connect"><%= button_to(I18n.t('log_in'), new_user_session_path, class: "btn btn-primary",:method => :get) %> </div>
           </div>
         <% end %>
       <% else %>
         <div class="asideElement">
-        <p class="sub finished">Terminé</p>
+        <p class="sub finished"><%= I18n.t('finished')%></p>
         </div>
       <% end %>
 
@@ -67,12 +67,12 @@
 <br><br>
 
 <% if user_signed_in? && (current_user == @project.user || current_user.admin?) %>
-  <p><%= link_to "Editer le projet", edit_project_path %></p>
+  <p><%= link_to  I18n.t('edit_project'), edit_project_path %></p>
 <% end %>
 
 <% if user_signed_in? && current_user.admin? %>
-<%= link_to "Delete", @project, method: :delete,
-                                  data: { confirm: "You sure?" } %>
+<%= link_to I18n.t('delete'), @project, method: :delete,
+                                  data: { confirm: I18n.t('are_you_sure') } %>
 <% end %>
 
 <br><br>

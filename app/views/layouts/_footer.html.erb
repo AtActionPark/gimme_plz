@@ -3,23 +3,23 @@
     <div class="wrapper">
       <div class="footerDiv">
         <ul>
-          <h4>A propos</h4>
-          <li><%= link_to "Qui sommes nous?",   who_path %></li>
-          <li><%= link_to "L'équipe", team_path %></li>
-          <li><%= link_to "Conditions générales", conditions_path %></li>
+          <h4><%= I18n.t('about') %></h4>
+          <li><%= link_to I18n.t('who_are_we'),   who_path %></li>
+          <li><%= link_to I18n.t('the_team'), team_path %></li>
+          <li><%= link_to I18n.t('general_conditions'), conditions_path %></li>
         </ul>
       </div>
       <div class="footerDiv">
         <ul>
-          <h4>Aide</h4>
-          <li><%= link_to "FAQ",   faq_path %></li>
-          <li><%= link_to "Assistance", assistance_path %></li>
-          <li><%= link_to "Nous contacter", contact_path %></li>
+          <h4><%= I18n.t('help') %></h4>
+          <li><%= link_to I18n.t('faq'),   faq_path %></li>
+          <li><%= link_to I18n.t('assistance'), assistance_path %></li>
+          <li><%= link_to I18n.t('contact'), contact_path %></li>
         </ul>
       </div>
       <div class="footerDiv">
         <ul>
-          <h4>Nous suivre</h4>
+          <h4><%= I18n.t('follow_us') %></h4>
           <li><%= link_to "Facebook", '#' %></li>
           <li><%= link_to "Twitter", '#' %></li>
           <li><%= link_to "Instagram", '#' %></li>

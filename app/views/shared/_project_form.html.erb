@@ -2,33 +2,33 @@
 <%= form_for (@project) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
 
-  <%= f.label :Titre %><br>
+  <%= f.label I18n.t('title') %><br>
   <%= f.text_field :title %><br>
   <br>
 
-  <%= f.label :Image %><br />
+  <%= f.label I18n.t('picture') %><br />
   <%= f.file_field :mainpicture %>
   <br>
 
-  <%= f.label :Presentation %><br>
+  <%= f.label I18n.t('presentation') %><br>
   <%= f.text_area(:presentation, cols: "100", rows: "2") %><br>
   <br>
 
-  <%= f.label :'Objectif - €' %><br>
+  <%= f.label I18n.t('objective_$') %><br>
   <%= f.number_field :objective %><br>
   <br>
 
-  <%= f.label :'Limite en jours' %><br>
+  <%= f.label I18n.t('time_limit') %><br>
   <%= f.number_field :timelimit %><br>
   <br>
 
-  <%= f.label :'Categorie' %><br>
+  <%= f.label I18n.t('category') %><br>
   <%= f.select :category, Project.options_for_category %>
   <br>
 
-  <%= f.label :'Description - Markdown' %><br>
+  <%= f.label I18n.t('description_markdown') %><br>
   <%= f.text_area(:description, cols: "100", rows: "10") %><br>
   <br>
   
-  <%= f.submit %>
+  <%= f.submit  %>
 <% end %>

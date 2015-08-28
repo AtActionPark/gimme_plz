@@ -5,9 +5,9 @@ if (<%= @amount %> > 0){
   $('.contributors').html(<%= @contributors %> );
   $('.contributors').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
   $('.alert').remove();
-  $('.projectShow').before('<div class="alert alert-success">Votre participation a été prise en compte, merci!</div>');
+  $('.projectShow').before('<div class="alert alert-success">:)</div>');
 }
 else{
   $('.alert').remove();
-  $('.projectShow').before('<div class="alert alert-error">Montant incorrect</div>');
+  $('.projectShow').before('<div class="alert alert-error">:(</div>');
 }

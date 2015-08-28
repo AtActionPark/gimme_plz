@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   devise_for :users, :controllers => { registrations: 'registrations' }
   resources :users, only: [:index, :show, :destroy]
   resources :projects
@@ -22,5 +23,6 @@ Rails.application.routes.draw do
 
   get 'selection', :to => "static_pages#selection"
   post 'selection', :to => "static_pages#selection"
- 
+
+
 end

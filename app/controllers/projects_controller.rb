@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
   def create
     @project = current_user.projects.build(project_params)
     if @project.save
-      flash[:success] = "project created!"
+      flash[:success] = I18n.t('project_created')
       redirect_to root_url
     else
       render :new
@@ -14,7 +14,7 @@ class ProjectsController < ApplicationController
   def update
     @project = Project.find(params[:id])
     if @project.update_attributes(project_params)
-      flash[:success] = "Project mis à jour"
+      flash[:success] = I18n.t('project_updated')
       redirect_to @project
     else
       render 'edit'
@@ -27,7 +27,7 @@ class ProjectsController < ApplicationController
 
   def destroy
     Project.find(params[:id]).destroy
-    flash[:success] = "Project deleted"
+    flash[:success] = I18n.t('project_deleted')
     redirect_to projects_path
   end
 

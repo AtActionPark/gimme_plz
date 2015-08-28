@@ -3,13 +3,13 @@
   <%= link_to user.name, user %>
   <% if current_user.admin? && current_user != user %>
   <span> ---- </span>
-    <%= link_to "Delete", user, method: :delete,
-                                  data: { confirm: "You sure?" } %>
+    <%= link_to I18n.t('delete_user'), user, method: :delete,
+                                  data: { confirm: I18n.t('are_you_sure') } %>
                                   <span> - </span>
     <% if user.admin? %>
-      <%= link_to "Remove Admin Provileges", {:controller => "users", :action => "removeAdmin", :id => user.id } %>
+      <%= link_to I18n.t('remove_admin'), {:controller => "users", :action => "removeAdmin", :id => user.id } %>
     <% else %>
-      <%= link_to "Add Admin Provileges", {:controller => "users", :action => "addAdmin", :id => user.id } %>
+      <%= link_to I18n.t('add_admin'), {:controller => "users", :action => "addAdmin", :id => user.id } %>
     <% end %>
   <% end %>
 </li>

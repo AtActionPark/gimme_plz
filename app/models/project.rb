@@ -10,39 +10,39 @@ class Project < ActiveRecord::Base
   #validates :presentation, presence: true
 
   validate do |project|
-    project.errors.add(:base, "Renseigner le titre")  if project.title.blank?
+    project.errors.add(:base, I18n.t('input_title'))  if project.title.blank?
   end
 
   validate do |project|
-    project.errors.add(:base, "Choisir une image")  if project.mainpicture.blank?
+    project.errors.add(:base, I18n.t('input_picture'))  if project.mainpicture.blank?
   end
 
   validate do |project|
-    project.errors.add(:base, "Entrer une présentation")  if project.presentation.blank?
+    project.errors.add(:base, I18n.t('input_presentation'))  if project.presentation.blank?
   end
 
   validate do |project|
-    project.errors.add(:base, "Entrer une objectif")  if project.objective.blank?
+    project.errors.add(:base, I18n.t('input_objective'))  if project.objective.blank?
   end
 
   validate do |project|
-    project.errors.add(:base, "L'objectif doit être positif ")  if project.objective< 0
+    project.errors.add(:base, I18n.t('positive_objective'))  if project.objective< 0
   end
 
   validate do |project|
-    project.errors.add(:base, "Entrer une limite de temps")  if project.timelimit.blank?
+    project.errors.add(:base, I18n.t('input_time_limit'))  if project.timelimit.blank?
   end
 
   validate do |project|
-    project.errors.add(:base, "La limite de jours doit être positive ")  if project.timelimit< 0
+    project.errors.add(:base, I18n.t('positive_time_limit'))  if project.timelimit< 0
   end
 
    validate do |project|
-    project.errors.add(:base, "Entrer une categorie")  if project.category.blank?
+    project.errors.add(:base, I18n.t('input_category'))  if project.category.blank?
   end
 
   validate do |project|
-    project.errors.add(:base, "Entrer une description")  if project.description.blank?
+    project.errors.add(:base, I18n.t('input_description'))  if project.description.blank?
   end
 
   has_attached_file :mainpicture, :styles => { :medium => "300x300>", :thumb => "253x253#" }
@@ -120,25 +120,23 @@ class Project < ActiveRecord::Base
 
   def self.options_for_category
     [
-      'Art',
-      'BD',
-      'Artisanat',
-      'Danse',
-      'Design',
-      'Mode',
-      'Cinema & video',
-      'Gastronomie',
-      'Jeux',
-      'Journalisme',
-      'Musique',
-      'Photographie',
-      'Edition',
-      'Technologie',
-      'Theatre'
+      I18n.t('option_category_art'),
+      I18n.t('option_category_comics'),
+      I18n.t('option_category_craft'),
+      I18n.t('option_category_danse'),
+      I18n.t('option_category_design'),
+      I18n.t('option_category_mode'),
+      I18n.t('option_category_cinema_and_video'),
+      I18n.t('option_category_gastronomy'),
+      I18n.t('option_category_games'),
+      I18n.t('option_category_journalism'),
+      I18n.t('option_category_music'),
+      I18n.t('option_category_photography'),
+      I18n.t('option_category_edition'),
+      I18n.t('option_category_technology'),
+      I18n.t('option_category_theatre')
     ]
   end
-
-
 
 end
 

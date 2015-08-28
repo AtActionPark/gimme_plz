@@ -1,32 +1,32 @@
 <% provide(:title, "Projets") %>
 
-<h1>Tous les projets</h1>
+<h1><%= I18n.t('all_projects')%></h1>
 
 <div id="projects" >
   <%= form_for_filterrific @filterrific do |f| %>
     <div class="filterrific">
-      Rechercher
+      <%= I18n.t('search')%>
       <%# give the search field the 'filterrific-periodically-observed' class for live updates %>
       <%= f.text_field(
         :search_query
       ) %>
     </div>
     <div class="filterrific">
-       En cours <%= f.check_box :with_not_expired %> 
+       <%= I18n.t('current_projects')%> <%= f.check_box :with_not_expired %> 
     </div>
     <div class="filterrific">
-      Categorie
+      <%= I18n.t('project_category')%>
       <%= f.select(
         :with_category,
         @filterrific.select_options[:with_category],
         { include_blank: '- Any -' }
       ) %>
     </div>
-    <%= f.submit 'Filter' %>
+    <%= f.submit I18n.t('filter') %>
 
     <div class="filterrific">
       <%= link_to(
-        'Reset filters',
+        I18n.t('reset_filters'),
         reset_filterrific_url,
       ) %>
     </div>
