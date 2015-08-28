@@ -2,55 +2,62 @@
 
 [Gimme_$_plz](https://shielded-taiga-9226.herokuapp.com/) is a fake Kickstarter type site. It was created as the final assignment of the [Odin's Project](http://www.theodinproject.com/javascript-and-jquery/final-project)
 
-![presentation](/public/images/presentation.png )
+![presentation](app/assets/images/presentation.png )
 
 
-## Main Features
+# Main Features
 
-#### Profile & Authentication
+### Profile & Authentication
 
-Authentication through [Devise](https://github.com/plataformatec/devise "Devise").
+* Authentication through [Devise](https://github.com/plataformatec/devise "Devise").
+* Most of the site content is viewable without being signed in, but project creation, edit, and donations require authentication.
+* Users profile allows upload of a picture, processed with [Paperclip](https://github.com/thoughtbot/paperclip) and stored with AWS S3 storage.
 
-Most of the site content is viewable without being signed in, but project creation, edit, and donations require authentication.
-
-Users profile allows upload of a picture, processed with [Paperclip](https://github.com/thoughtbot/paperclip) and stored with AWS S3 storage.
-
-![userExample](/public/images/userExample.png )
+![userExample](app/assets/images/userExample.png )
 
 
 #### Projects & Donations
 
-Users can create and edit their projects. Projects have an objective, and a duration.
+* Users can create and edit their projects. Projects have an objective, and a duration.
+* The project description is rendered in markdown with [red carpet](https://github.com/vmg/redcarpet)
+* Project show page contains a donation ajax button that allows identified users to donate.
+* Remaining time and project donators are updated accordingly.
+* Comments are available on each project page via disqus.
 
-The project description is rendered in markdown with [red carpet](https://github.com/vmg/redcarpet)
+![projectPage](app/assets/images/projectPageExample.png )
+  
 
-Project show page contains a donation ajax button that allows identified users to donate.
+### Projects index
 
-The remaining time and project donators are updated accordingly.
+* The project index page allows for search queries with [filterrific](https://github.com/jhund/filterrific)
+* Users can search project by key word and categories and filter finished projects.
+* Project index page features ajax infinite scroll and [will_paginate pagination](https://github.com/mislav/will_paginate)
 
-Commments are available on each project page via disqus.
-
-![projectPage](/public/images/projectPageExample.png )
-
-
-#### Projects index
-
-The project index page allows for search queries with [filterrific](https://github.com/jhund/filterrific)
-
-Users can search project by key word and categories and filter finished projects.
-
-Project index page features ajax infinite scroll and [will_paginate pagination](https://github.com/mislav/will_paginate)
-
-![projectIndex](/public/images/projectIndexExample.png )
+![projectIndex](app/assets/images/projectIndexExample.png )
 
 
-#### Users & Admins
+### Users & Admins
 
 Admin users have access to special features : 
-1.Edit and delete all projects
-1.Access users index, delete users, or grant/remove admin privileges
-1.Access a selection screen, used to set up the projects displayed in the front page.
+* Edit and delete all projects
+* Access users index, delete users, or grant/remove admin privileges
+* Access a selection screen, used to set up the projects displayed in the front page.
 
-![adminPanels](/public/images/adminPanelsExample.png )
+![adminPanels](app/assets/images/adminExample.png )
+
+
+### UI & styling
+
+* The site uses bootstrap grid layout for resizing. Projects have been customized extensively to degrade gracefully on smaller resolutions.
+* The site is available ine english and french 
+* The general style of the site seems pretty neat to me but hey, im not a designer :)
+
+
+
+  
+
+# The end
+
+The site is hosted on [Heroku](https://shielded-taiga-9226.herokuapp.com/), all comments are welcome :)
 
 

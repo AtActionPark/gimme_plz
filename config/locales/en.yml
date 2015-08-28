@@ -208,7 +208,7 @@
   remove_admin: "Remove admin privileges"
   add_admin: "Add admin privileges"
   all_users: "All users"
-  users_projects: "Projects"
+  user_projects: "Projects"
 
 
 
