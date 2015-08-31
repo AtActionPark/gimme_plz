@@ -2,6 +2,8 @@
 
 [Gimme_$_plz](https://shielded-taiga-9226.herokuapp.com/) is a fake Kickstarter type site. It was created as the final assignment of the [Odin's Project](http://www.theodinproject.com/javascript-and-jquery/final-project)
 
+Its is still a work in progress, so images and features may change.
+
 ![presentation](app/assets/images/presentation.png )
 
 
@@ -49,8 +51,8 @@ Admin users have access to special features :
 ### UI & styling
 
 * The site uses bootstrap grid layout for resizing. Projects have been customized extensively to degrade gracefully on smaller resolutions.
-* The site is available ine english and french 
-* The general style of the site seems pretty neat to me but hey, im not a designer :)
+* The site is available in english and french 
+* The general style of the site seems pretty ok to me but Im not a designer :)
 
 
 
@@ -59,5 +61,6 @@ Admin users have access to special features :
 # The end
 
 The site is hosted on [Heroku](https://shielded-taiga-9226.herokuapp.com/), all comments are welcome :)
+
 
 
