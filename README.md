@@ -63,7 +63,7 @@ Admin users have access to special features :
 
 # The end
 
-The site is hosted on [Heroku](https://shielded-taiga-9226.herokuapp.com/), all comments are welcome :)
+The site is hosted on [Heroku](https://shielded-taiga-9226.herokuapp.com/), comments and ideas are more than welcome.
 
 
 
