@@ -3,7 +3,7 @@
 [Gimme_$_plz](https://shielded-taiga-9226.herokuapp.com/) is a fake Kickstarter type site. It was created as the final assignment of the [Odin's Project](http://www.theodinproject.com/javascript-and-jquery/final-project)
 
 
-Its is still a work in progress, so images and features may change.
+Its still a work in progress. A lot of the text is not written yet, and images, styling and features may change.
 
 ![presentation](app/assets/images/presentation.png )
 
